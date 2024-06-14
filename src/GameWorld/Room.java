@@ -1,29 +1,19 @@
 package GameWorld;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
 
 public class Room implements IRoom {
     private String name;
     private Tuple<Integer, Integer> coordinates;
+    private Tuple<Integer, Integer> endingCoordinates;
     private List<IItem> items;
-    private int index;
 
-    public Room(String name, Tuple<Integer, Integer> coordinates, int index) {
+    public Room(String name, Tuple<Integer, Integer> coordinates, Tuple<Integer, Integer> endingCoordinates) {
         this.name = name;
         this.coordinates = coordinates;
+        this.endingCoordinates = endingCoordinates;
         this.items = new ArrayList<>();
-        this.index = index;
-    }
-
-    @Override
-    public void addItem(IItem item) {
-        items.add(item);
-    }
-
-    @Override
-    public List<IItem> getItems() {
-        return items;
     }
 
     @Override
@@ -37,13 +27,12 @@ public class Room implements IRoom {
     }
 
     @Override
-    public int getIndex() {
-        return index;
+    public Tuple<Integer, Integer> getEndingCoordinates() {
+        return endingCoordinates;
     }
 
     @Override
-    public List<IRoom> getNeighbors(List<IRoom> rooms) {
-        // 根据需要实现获取邻居房间的逻辑
-        return new ArrayList<>();
+    public void addItem(IItem item) {
+        items.add(item);
     }
 }
