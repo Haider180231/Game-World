@@ -9,11 +9,11 @@ public class Main {
             String filePath = "res/mansion.txt";
             String imageOutputPath = "res/world.png";
             GameWorld world = MansionParser.parseMansion(filePath);
-            world.displayRoomInfo(0);  // Display information of the first room
+            world.displayRoomInfo(2);  // Display information of the first room
             world.displayMap(imageOutputPath);  // Display and save the map
 
             // Test the getNeighbors method
-            IRoom room = world.getRoomByIndex(0);
+            IRoom room = world.getRoomByIndex(2);
             List<IRoom> neighbors = world.getNeighbors(room);
             System.out.println("Neighbors of " + room.getName() + ":");
             for (IRoom neighbor : neighbors) {

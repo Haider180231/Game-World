@@ -32,16 +32,12 @@ public class GameWorld {
         return rooms.get(index);
     }
 
-    public int getTargetHealth() {
-        return target.getHealth();
-    }
-
-    public String getTargetName() {
-        return target.getName();
-    }
-
     public List<IRoom> getRooms() {
         return rooms;
+    }
+
+    public ITarget getTarget() {
+        return target;
     }
 
     public List<IRoom> getNeighbors(IRoom room) {
