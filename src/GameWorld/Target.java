@@ -5,10 +5,10 @@ public class Target implements ITarget {
     private String name;
     private Tuple<Integer, Integer> coordinates;
 
-    public Target(int health, String name, Tuple<Integer, Integer> initialCoordinates) {
+    public Target(int health, String name, Tuple<Integer, Integer> coordinates) {
         this.health = health;
         this.name = name;
-        this.coordinates = initialCoordinates;
+        this.coordinates = coordinates;
     }
 
     @Override
@@ -22,12 +22,12 @@ public class Target implements ITarget {
     }
 
     @Override
-    public Tuple<Integer, Integer> getCoordinates() {
-        return coordinates;
+    public void moveTarget(Tuple<Integer, Integer> newCoordinates) {
+        this.coordinates = newCoordinates;
     }
 
     @Override
-    public void moveTarget(Tuple<Integer, Integer> newCoordinates) {
-        this.coordinates = newCoordinates;
+    public Tuple<Integer, Integer> getCoordinates() {
+        return coordinates;
     }
 }

@@ -35,4 +35,18 @@ public class Room implements IRoom {
     public void addItem(IItem item) {
         items.add(item);
     }
+
+    @Override
+    public List<IItem> getItems() {
+        return items;
+    }
+
+    @Override
+    public boolean isNeighbor(Room other) {
+        // Check if this room shares a wall with the other room
+        return (this.coordinates.getFirst() == other.endingCoordinates.getFirst() + 1 && this.coordinates.getSecond() <= other.endingCoordinates.getSecond() && this.endingCoordinates.getSecond() >= other.coordinates.getSecond()) || 
+               (this.endingCoordinates.getFirst() == other.coordinates.getFirst() - 1 && this.coordinates.getSecond() <= other.endingCoordinates.getSecond() && this.endingCoordinates.getSecond() >= other.coordinates.getSecond()) || 
+               (this.coordinates.getSecond() == other.endingCoordinates.getSecond() + 1 && this.coordinates.getFirst() <= other.endingCoordinates.getFirst() && this.endingCoordinates.getFirst() >= other.coordinates.getFirst()) || 
+               (this.endingCoordinates.getSecond() == other.coordinates.getSecond() - 1 && this.coordinates.getFirst() <= other.endingCoordinates.getFirst() && this.endingCoordinates.getFirst() >= other.coordinates.getFirst());
+    }
 }

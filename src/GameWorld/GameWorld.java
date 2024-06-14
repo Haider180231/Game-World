@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import java.util.List;
+import java.util.ArrayList;
 
 public class GameWorld {
     private int rows;
@@ -43,9 +44,45 @@ public class GameWorld {
         return rooms;
     }
 
+    public List<IRoom> getNeighbors(IRoom room) {
+        List<IRoom> neighbors = new ArrayList<>();
+        for (IRoom r : rooms) {
+            if (r != room && ((Room) room).isNeighbor((Room) r)) {
+                neighbors.add(r);
+            }
+        }
+        return neighbors;
+    }
+
+    public void displayRoomInfo(int index) {
+        if (index < 0 || index >= rooms.size()) {
+            System.out.println("Invalid room index.");
+            return;
+        }
+        IRoom room = rooms.get(index);
+        System.out.println("Room Name: " + room.getName());
+        System.out.println("Items in the Room:");
+        for (IItem item : room.getItems()) {
+            System.out.println(" - " + item.getName() + " (Damage: " + item.getDamage() + ")");
+        }
+        List<IRoom> neighbors = getNeighbors(room);
+        System.out.println("Visible Rooms:");
+        for (IRoom neighbor : neighbors) {
+            System.out.println(" - " + neighbor.getName());
+        }
+    }
+
+    public void moveTarget() {
+        for (int i = 0; i < rooms.size(); i++) {
+            IRoom room = rooms.get(i);
+            target.moveTarget(room.getCoordinates());
+            System.out.println("Target moved to: " + room.getName());
+        }
+    }
+
     public void displayMap(String imageOutputPath) throws IOException {
-        int cellSize = 20;  
-        int padding = 10;   
+        int cellSize = 20;  // Size of each room
+        int padding = 10;   // Padding around the image
         BufferedImage image = new BufferedImage(columns * cellSize + 2 * padding, rows * cellSize + 2 * padding, BufferedImage.TYPE_INT_ARGB);
         Graphics g = image.getGraphics();
         g.setColor(Color.WHITE);
@@ -60,18 +97,26 @@ public class GameWorld {
             int colEnd = room.getEndingCoordinates().getSecond();
             String roomName = room.getName();
 
+            // Draw each room's border
             int x = colStart * cellSize + padding;
             int y = rowStart * cellSize + padding;
             int width = (colEnd - colStart + 1) * cellSize;
             int height = (rowEnd - rowStart + 1) * cellSize;
 
-            g.drawLine(x, y, x + width, y);  
-            g.drawLine(x, y, x, y + height);  
-            g.drawLine(x + width, y, x + width, y + height); 
-            g.drawLine(x, y + height, x + width, y + height);  
+            g.drawLine(x, y, x + width, y);  // Top
+            g.drawLine(x, y, x, y + height);  // Left
+            g.drawLine(x + width, y, x + width, y + height);  // Right
+            g.drawLine(x, y + height, x + width, y + height);  // Bottom
 
-            g.drawString(roomName, x + 2, y + 12); 
+            g.drawString(roomName, x + 2, y + 12);  // Adjust room name position
         }
+
+        // Draw the target character
+        Tuple<Integer, Integer> targetCoords = target.getCoordinates();
+        g.setColor(Color.RED);
+        int targetX = targetCoords.getSecond() * cellSize + padding;
+        int targetY = targetCoords.getFirst() * cellSize + padding;
+        g.fillOval(targetX, targetY, cellSize, cellSize);
 
         g.dispose();
         System.out.println("Image created successfully.");
