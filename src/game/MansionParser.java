@@ -68,7 +68,8 @@ public class MansionParser {
         roomNameBuilder.append(roomInfo[j]).append(" ");
       }
       final String roomName = roomNameBuilder.toString().trim();
-      final Room room = new Room(roomName, new Tuple<>(rowStart, colStart), new Tuple<>(rowEnd, colEnd));
+      final Room room = new Room(roomName, 
+          new Tuple<>(rowStart, colStart), new Tuple<>(rowEnd, colEnd));
       rooms.add(room);
     }
 
