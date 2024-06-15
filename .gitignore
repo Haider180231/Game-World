@@ -1,0 +1,14 @@
+# Ignore generated files
+res/run_log.txt
+res/world.png
+
+# Ignore IDE-specific files
+*.class
+*.iml
+.idea/
+.vscode/
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
