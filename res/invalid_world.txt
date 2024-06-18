@@ -1,0 +1,34 @@
+36 Doctor Lucky's Mansion
+50 Doctor Lucky
+21
+22 19 23 26 Armory
+16 21 21 28 Billiard Room
+28  0 35  5 Carriage House
+12 10 15 18 Green House
+10  5 13  8 Dining Hall
+20 25 22 28 Foyer
+30 10 34 13 Gallery
+32 15 34 19 Hall
+20 20 23 23 Kitchen
+15 10 18 12 Library
+ 2  9  7 14 Lilac Room
+ 2 15  7 22 Master Suite
+ 0 23  3 28 Nursery
+10  5 15 10 Parlor
+28 12 35 19 Piazza
+ 6  3  9  8 Servants' Quarters
+ 8 11 11 20 Tennessee Room
+10 21 15 26 Trophy Room
+22  5 23 12 Wine Cellar
+30  6 35 11 Winter Garden
+10
+0 10 Revolver
+1 15 Knife
+2  5 Rope
+3  8 Candlestick
+4  6 Lead Pipe
+5  7 Wrench
+6  9 Gun
+7  4 Poison
+8  8 Axe
+9  3 Sword
