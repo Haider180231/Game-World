@@ -106,3 +106,15 @@ Target moved to: Trophy Room
 Target moved to: Wine Cellar
 Target moved to: Winter Garden
 ```
+
+## Running the JAR File
+
+### 1. Run the JAR File
+
+To run the JAR file, use the following command:
+
+```
+java -jar game-world.jar
+```
+
+Make sure that the res directory is in the same directory as the JAR file so that the program can find the necessary resources (e.g., mansion.txt).
