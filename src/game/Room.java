@@ -55,7 +55,6 @@ public class Room implements Iroom {
 
   @Override
   public boolean isNeighbor(Room other) {
-    // Check if this room shares a wall with the other room
     return (this.coordinates.getFirst() == other.endingCoordinates.getFirst() + 1 
         && this.coordinates.getSecond() <= other.endingCoordinates.getSecond() 
         && this.endingCoordinates.getSecond() >= other.coordinates.getSecond()) 

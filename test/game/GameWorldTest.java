@@ -13,16 +13,6 @@ public class GameWorldTest {
 
   private GameWorld world;
 
-  /**
-   * Sets up the test environment by parsing the mansion file.
-   *
-   * @throws IOException if an error occurs while reading the file
-   */
-  @Before
-  public void setUp() throws IOException {
-    String filePath = "res/mansion.txt";
-    world = MansionParser.parseMansion(filePath);
-  }
 
   /**
    * Tests loading rooms and items.
