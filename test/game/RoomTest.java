@@ -15,8 +15,12 @@ import org.junit.Test;
  */
 public class RoomTest {
 
-  private GameWorld world;
+  private Igameworld world;
 
+  @Before
+  public void setUp() throws IOException {
+    world = MansionParser.parseMansion("res/mansion.txt");
+  }
 
   /**
    * Tests the getName method.

@@ -1,5 +1,6 @@
 package game;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import org.junit.Assert;
@@ -11,8 +12,15 @@ import org.junit.Test;
  */
 public class GameWorldTest {
 
-  private GameWorld world;
+  private Igameworld world;
 
+  /**
+   * Sets up the test environment.
+   */
+  @Before
+  public void setUp() throws IOException {
+    world = MansionParser.parseMansion("res/mansion.txt");
+  }
 
   /**
    * Tests loading rooms and items.
@@ -49,10 +57,14 @@ public class GameWorldTest {
    */
   @Test
   public void testMoveTarget() {
+    Iroom initialRoom = world.getRoomByIndex(0);
+    world.getTarget().moveTarget(initialRoom.getCoordinates());
+    Assert.assertEquals(initialRoom.getCoordinates(), world.getTarget().getCoordinates());
+
     world.moveTarget();
 
-    Iroom lastRoom = world.getRoomByIndex(world.getRooms().size() - 1);
-    Assert.assertEquals(lastRoom.getCoordinates(), world.getTarget().getCoordinates());
+    Iroom nextRoom = world.getRoomByIndex(1);
+    Assert.assertEquals(nextRoom.getCoordinates(), world.getTarget().getCoordinates());
   }
 
   /**
@@ -185,7 +197,7 @@ public class GameWorldTest {
     List<Iitem> items = room.getItems();
     Assert.assertTrue(items.isEmpty());
   }
-  
+
   /**
    * Tests target starting in room 0.
    */
@@ -193,7 +205,7 @@ public class GameWorldTest {
   public void testTargetStartsInRoom0() {
     Assert.assertEquals(new Tuple<>(0, 0), world.getTarget().getCoordinates());
   }
-  
+
   /**
    * Tests moving the target from room 0 to room 1.
    */
@@ -204,7 +216,7 @@ public class GameWorldTest {
     world.getTarget().moveTarget(room1.getCoordinates());
     Assert.assertEquals(room1.getCoordinates(), world.getTarget().getCoordinates());
   }
-  
+
   /**
    * Tests moving the target from any room to the next room in the index list.
    */
@@ -229,5 +241,81 @@ public class GameWorldTest {
     Assert.assertEquals(lastRoom.getCoordinates(), world.getTarget().getCoordinates());
     world.getTarget().moveTarget(firstRoom.getCoordinates());
     Assert.assertEquals(firstRoom.getCoordinates(), world.getTarget().getCoordinates());
+  }
+
+  /**
+   * Tests adding a player to the game world.
+   */
+  @Test
+  public void testAddPlayer() {
+    Iroom initialRoom = world.getRoomByIndex(0);
+    Iplayer player = new Player("Test Player", initialRoom.getCoordinates(), 5);
+    world.addPlayer(player);
+    List<Iplayer> players = world.getPlayers();
+    Assert.assertEquals(1, players.size());
+    Assert.assertEquals("Test Player", players.get(0).getName());
+  }
+
+  /**
+   * Tests moving a player within the game world.
+   */
+  @Test
+  public void testMovePlayer() {
+    Iroom initialRoom = world.getRoomByIndex(0);
+    Iroom targetRoom = world.getRoomByIndex(1);
+    Iplayer player = new Player("Test Player", initialRoom.getCoordinates(), 5);
+    world.addPlayer(player);
+    world.movePlayer(player, targetRoom.getCoordinates());
+    Assert.assertEquals(targetRoom.getCoordinates(), player.getCoordinates());
+  }
+
+  /**
+   * Tests computer player taking a turn.
+   */
+  @Test
+  public void testComputerPlayerTakeTurn() {
+    Iroom initialRoom = world.getRoomByIndex(0);
+    Iplayer computerPlayer = new ComputerPlayer("Computer", initialRoom.getCoordinates(), 5);
+    world.addPlayer(computerPlayer);
+    ((ComputerPlayer) computerPlayer).takeTurn(world);
+  }
+
+  /**
+   * Tests looking around from a player's perspective.
+   */
+  @Test
+  public void testLookAround() {
+    Iroom initialRoom = world.getRoomByIndex(0);
+    Iplayer player = new Player("Test Player", initialRoom.getCoordinates(), 5);
+    world.addPlayer(player);
+    List<Iroom> neighbors = world.getNeighbors(initialRoom);
+    Assert.assertNotNull(neighbors);
+    Assert.assertFalse(neighbors.isEmpty());
+  }
+
+  /**
+   * Tests picking up an item in a room.
+   */
+  @Test
+  public void testPickItem() {
+    Iroom initialRoom = world.getRoomByIndex(0);
+    Iitem item = new Item("Sword", 10, 0);
+    initialRoom.addItem(item);
+    Iplayer player = new Player("Test Player", initialRoom.getCoordinates(), 5);
+    world.addPlayer(player);
+    player.addItem(item);
+    Assert.assertEquals(1, player.getItems().size());
+    Assert.assertEquals("Sword", player.getItems().get(0).getName());
+  }
+
+  /**
+   * Tests displaying the game map.
+   */
+  @Test
+  public void testDisplayMap() throws IOException {
+    GameView view = new GameView();
+    view.displayMap(world, "res/test_map.png");
+    File file = new File("res/test_map.png");
+    Assert.assertTrue(file.exists());
   }
 }
