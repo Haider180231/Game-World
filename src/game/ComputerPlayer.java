@@ -113,7 +113,7 @@ public class ComputerPlayer implements Iplayer {
         // pick item
         Iroom currentRoom = world.getRoomByCoordinates(coordinates);
         if (currentRoom != null && !currentRoom.getItems().isEmpty()) {
-          Iitem item = currentRoom.getItems().get(0); 
+          Iitem item = currentRoom.getItems().get(0);
           addItem(item);
           currentRoom.getItems().remove(item);
         }
@@ -121,6 +121,11 @@ public class ComputerPlayer implements Iplayer {
 
       case 2:
         // look around
+        break;
+
+      default:
+        // Default case to handle unexpected values
+        System.out.println("Unexpected action value: " + action);
         break;
     }
   }
