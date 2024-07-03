@@ -92,7 +92,8 @@ public class GameController {
         log("Computer player took its turn.\n\n");
         System.out.println("Action completed\n");
       } else {
-        System.out.println("Choose an action: move, pick item, look around, display map, display player, display room, exit");
+        System.out.println("Choose an action: move, pick item, look around, "
+            + "display map, display player, display room, exit");
         String action = scanner.nextLine().trim().toLowerCase();
         log("Action: " + action + "\n");
 
@@ -202,7 +203,8 @@ public class GameController {
       player.addItem(item);
       room.getItems().remove(item);
       log("Player " + player.getName() + " picked up item " + item.getName() + ".\n");
-      System.out.println("Player " + player.getName() + " picked up item " + item.getName() + ".\n");
+      System.out.println("Player " + player.getName() 
+          + " picked up item " + item.getName() + ".\n");
     } else {
       log("No items in the room for player " + player.getName() + " to pick up.\n");
       System.out.println("No items in the room for player " + player.getName() + " to pick up.\n");
@@ -219,7 +221,8 @@ public class GameController {
     Iroom room = findRoomByCoordinates(player.getCoordinates());
     if (room != null) {
       StringBuilder output = new StringBuilder();
-      output.append("Player ").append(player.getName()).append(" is in: ").append(room.getName()).append(".\n");
+      output.append("Player ").append(player.getName())
+      .append(" is in: ").append(room.getName()).append(".\n");
 
       output.append("Items in the room:\n");
       if (room.getItems().isEmpty()) {
@@ -289,7 +292,8 @@ public class GameController {
   private void displayPlayer(Iplayer player) {
     StringBuilder output = new StringBuilder();
     output.append("Player Name: " + player.getName() + "\n");
-    output.append("Coordinates: " + player.getCoordinates().getFirst() + ", " + player.getCoordinates().getSecond() + "\n");
+    output.append("Coordinates: " + player.getCoordinates().getFirst() + 
+        ", " + player.getCoordinates().getSecond() + "\n");
     output.append("Items:\n");
     for (Iitem item : player.getItems()) {
       output.append(" - " + item.getName() + " (Damage: " + item.getDamage() + ")\n");
