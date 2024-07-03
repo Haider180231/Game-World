@@ -292,8 +292,8 @@ public class GameController {
   private void displayPlayer(Iplayer player) {
     StringBuilder output = new StringBuilder();
     output.append("Player Name: " + player.getName() + "\n");
-    output.append("Coordinates: " + player.getCoordinates().getFirst() + 
-        ", " + player.getCoordinates().getSecond() + "\n");
+    output.append("Coordinates: " + player.getCoordinates().getFirst() 
+        + ", " + player.getCoordinates().getSecond() + "\n");
     output.append("Items:\n");
     for (Iitem item : player.getItems()) {
       output.append(" - " + item.getName() + " (Damage: " + item.getDamage() + ")\n");
