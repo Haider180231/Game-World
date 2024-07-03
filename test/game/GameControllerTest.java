@@ -242,5 +242,20 @@ public class GameControllerTest {
     }
     return null;
   }
+  
+  /**
+   * Tests the addition of a computer player to the game.
+   */
+  @Test
+  public void testAddComputer() {
+    String input = "yes\ncomputer\nComputerPlayer\nno\nexit\n";
+    inContent = new ByteArrayInputStream(input.getBytes());
+    System.setIn(inContent);
+
+    controller.startGame();
+    List<Iplayer> players = world.getPlayers();
+    Assert.assertEquals(1, players.size());
+    Assert.assertEquals("ComputerPlayer", players.get(0).getName());
+  }
 
 }

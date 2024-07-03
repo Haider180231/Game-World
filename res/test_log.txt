@@ -5027,3 +5027,209 @@ Target moved.
 
 Turn 1: TestPlayer's turn.
 Action: exit
+Player TestPlayer added at room Dining Hall.
+Turn 0: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702214114.png.
+Action completed
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Player TestPlayer added at room Drawing Room.
+Turn 0: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Drawing Room.
+Items in the room:
+ - Letter Opener
+Visible rooms:
+ - Armory
+ - Dining Hall
+ - Foyer
+ - Wine Cellar
+Players in the room:
+ - No other players
+Target in the room:
+ - No target
+Action completed
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Player TestPlayer added at room Drawing Room.
+Turn 0: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 5: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 6: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 7: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 8: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 9: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Game over. Maximum turns reached.
+Player Player1 added at room Lilac Room.
+Turn 0: Player1's turn.
+Action: move
+Player Player1 moved to room Lancaster Room.
+Action completed
+
+Target moved.
+
+Turn 1: Player1's turn.
+Action: move
+Player Player1 moved to room Lilac Room.
+Action completed
+
+Target moved.
+
+Turn 2: Player1's turn.
+Action: exit
+Player TestPlayer added at room Kitchen.
+Turn 0: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Crepe Pan.
+Action completed
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Player TestPlayer added at room Nursery.
+Turn 0: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 0, 23
+Items:
+Action completed
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Player TestPlayer added at room Hedge Maze.
+Turn 0: TestPlayer's turn.
+Action: exit
+Player TestPlayer added at room Lilac Room.
+Turn 0: TestPlayer's turn.
+Action: display room
+Action completed
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Player TestPlayer added at room Armory.
+Turn 0: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Billiard Room.
+Action completed
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Player ComputerPlayer added at room Master Suite.
+Turn 0: ComputerPlayer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: ComputerPlayer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 2: ComputerPlayer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: ComputerPlayer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 4: ComputerPlayer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: ComputerPlayer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 6: ComputerPlayer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 7: ComputerPlayer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 8: ComputerPlayer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 9: ComputerPlayer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Game over. Maximum turns reached.
