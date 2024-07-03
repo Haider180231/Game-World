@@ -369,19 +369,19 @@ public class GameWorldTest {
    */
   @Test
   public void testPickItemBeyondMaximum() {
-      Iroom initialRoom = world.getRoomByIndex(0); 
-      Iplayer player = new Player("Test Player", initialRoom.getCoordinates(), 1); 
-      Iitem item1 = new Item("Test Item 1", 10, 0);
-      Iitem item2 = new Item("Test Item 2", 20, 0);
-      player.addItem(item1);
-      initialRoom.addItem(item2);
-      world.addPlayer(player);
+    Iroom initialRoom = world.getRoomByIndex(0); 
+    Iplayer player = new Player("Test Player", initialRoom.getCoordinates(), 1); 
+    Iitem item1 = new Item("Test Item 1", 10, 0);
+    Iitem item2 = new Item("Test Item 2", 20, 0);
+    player.addItem(item1);
+    initialRoom.addItem(item2);
+    world.addPlayer(player);
 
-      int initialItemCount = player.getItems().size();
-      player.addItem(item2); 
-      int finalItemCount = player.getItems().size();
+    int initialItemCount = player.getItems().size();
+    player.addItem(item2); 
+    int finalItemCount = player.getItems().size();
 
-      Assert.assertEquals(initialItemCount, finalItemCount);
+    Assert.assertEquals(initialItemCount, finalItemCount);
   }
   
   
