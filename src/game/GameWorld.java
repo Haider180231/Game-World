@@ -116,7 +116,13 @@ public class GameWorld implements Igameworld {
 
   @Override
   public void movePlayer(Iplayer player, Tuple<Integer, Integer> newCoordinates) {
-    player.move(newCoordinates);
+//    player.move(newCoordinates);
+    Iroom currentRoom = getRoomByCoordinates(player.getCoordinates());
+    Iroom targetRoom = getRoomByCoordinates(newCoordinates);
+
+    if (currentRoom != null && targetRoom != null && getNeighbors(currentRoom).contains(targetRoom)) {
+        player.move(newCoordinates);
+    }
   }
 
   @Override

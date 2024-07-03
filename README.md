@@ -68,43 +68,96 @@ The following section describes the content of an example run of the program. Th
 ### Run Log
 
 ```plaintext
-Displaying information of the first room:
-=======================================
-Room Name: Carriage House
-Items in the Room:
- - Chain Saw (Damage: 4)
- - Big Red Hammer (Damage: 4)
-Visible Rooms:
+Player John added at room Hedge Maze.
+Player computer1 added at room Green House.
+Player Haidong added at room Trophy Room.
+Turn 0: John's turn.
+Action: move
+Player John moved to room Piazza.
+Action completed
+
+Target moved.
+
+Turn 1: computer1's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 2: Haidong's turn.
+Action: pick item
+Player Haidong picked up item Duck Decoy.
+Action completed
+
+Target moved.
+
+Turn 3: John's turn.
+Action: look around
+Player John is in: Piazza.
+Items in the room:
+ - Civil War Cannon
+Visible rooms:
+ - Foyer
+ - Hedge Maze
  - Winter Garden
+Players in the room:
+ - No other players
+Target in the room:
+ - No target
+Action completed
 
-Testing getNeighbors method:
-============================
-Neighbors of Carriage House:
-Winter Garden
+Target moved.
 
-Moving the target character:
-============================
-Target moved to: Armory
-Target moved to: Billiard Room
-Target moved to: Carriage House
-Target moved to: Dining Hall
-Target moved to: Drawing Room
-Target moved to: Foyer
-Target moved to: Green House
-Target moved to: Hedge Maze
-Target moved to: Kitchen
-Target moved to: Lancaster Room
-Target moved to: Library
-Target moved to: Lilac Room
-Target moved to: Master Suite
-Target moved to: Nursery
-Target moved to: Parlor
-Target moved to: Piazza
-Target moved to: Servants' Quarters
-Target moved to: Tennessee Room
-Target moved to: Trophy Room
-Target moved to: Wine Cellar
-Target moved to: Winter Garden
+Turn 4: computer1's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: Haidong's turn.
+Action: display player
+Player Name: Haidong
+Coordinates: 10, 21
+Items:
+ - Duck Decoy (Damage: 3)
+Action completed
+
+Target moved.
+
+Turn 6: John's turn.
+Action: display room
+Action completed
+
+Target moved.
+
+Turn 7: computer1's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 8: Haidong's turn.
+Action: display map
+Map displayed and saved to res/world20240702212300.png.
+Action completed
+
+Target moved.
+
+Turn 9: John's turn.
+Action: look around
+Player John is in: Piazza.
+Items in the room:
+ - Civil War Cannon
+Visible rooms:
+ - Foyer
+ - Hedge Maze
+ - Winter Garden
+Players in the room:
+ - No other players
+Target in the room:
+ - No target
+Action completed
+
+Target moved.
+
+Game over. Maximum turns reached.
 ```
 
 ## Running the JAR File
@@ -118,3 +171,54 @@ java -jar game-world.jar
 ```
 
 Make sure that the res directory is in the same directory as the JAR file so that the program can find the necessary resources (e.g., mansion.txt).
+
+## Using the JAR File
+
+The JAR file provides several functionalities that you can use to interact with the game world. Here is a list of commands you can use:
+
+**Add a Human-Controlled Player**
+   - **Command**: `add player`
+   - **Description**: Adds a human-controlled player to the game world. You will be prompted to enter the player's name and initial coordinates.
+   
+**Move a Player**
+   - **Command**: `move player`
+   - **Description**: Moves a player to a neighboring room. You will be prompted to enter the player's name and the new coordinates.
+   
+**Pick Up an Item**
+   - **Command**: `pick item`
+   - **Description**: Allows a player to pick up an item in the current room. You will be prompted to enter the player's name.
+   
+**Look Around**
+   - **Command**: `look around`
+   - **Description**: Displays information about the current room and its neighboring rooms. You will be prompted to enter the player's name.
+   
+**Display the Map**
+   - **Command**: `display map`
+   - **Description**: Generates and saves a graphical representation of the game world map to a file. You will be prompted to enter the output file path.
+   
+**Display Player Information**
+   - **Command**: `display player`
+   - **Description**: Displays the information of a specific player, including their current coordinates and the items they are carrying.
+   
+**Exit the Game**
+   - **Command**: `exit`
+   - **Description**: Exits the game.
+
+
+##The example run demonstrates the following functionalities of the game:
+
+1. Adding a human-controlled player to the game world.
+2. Adding a computer-controlled player to the game world.
+3. The player moving around the world.
+4. The player picking up an item.
+5. The player looking around to see neighboring rooms and items.
+6. Taking turns between multiple players.
+7. Displaying the description of a specific player, including their items and current location.
+8. Displaying information about a specific space in the world, including items and neighboring rooms.
+9. Creating and saving a graphical representation of the world map to the current directory.
+10. Automatically moving the target character around the world after each turn.
+11. Demonstrating the game ending after reaching the maximum number of turns.
+
+
+
+

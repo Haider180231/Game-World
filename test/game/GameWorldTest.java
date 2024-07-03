@@ -318,4 +318,71 @@ public class GameWorldTest {
     File file = new File("res/test_map.png");
     Assert.assertTrue(file.exists());
   }
+  
+  /**
+   * Tests moving a player to a neighboring room.
+   */
+  @Test
+  public void testMoveToNeighbor() {
+    Iroom initialRoom = world.getRoomByIndex(0); // Armory
+    Iroom neighborRoom = world.getNeighbors(initialRoom).get(0); // Billiard Room
+    Iplayer player = new Player("Test Player", initialRoom.getCoordinates(), 5);
+    world.addPlayer(player);
+    world.movePlayer(player, neighborRoom.getCoordinates());
+    Assert.assertEquals(neighborRoom.getCoordinates(), player.getCoordinates());
+  }
+  
+  /**
+   * Tests that the player cannot move to a non-neighboring room.
+   */
+  @Test
+  public void testInvalidMove() {
+    Iroom initialRoom = world.getRoomByIndex(0); 
+    Iroom nonNeighborRoom = world.getRoomByIndex(20);
+    Iplayer player = new Player("Test Player", initialRoom.getCoordinates(), 5);
+    world.addPlayer(player);
+    world.movePlayer(player, nonNeighborRoom.getCoordinates());
+    Assert.assertNotEquals(nonNeighborRoom.getCoordinates(), player.getCoordinates());
+    Assert.assertEquals(initialRoom.getCoordinates(), player.getCoordinates());
+  }
+  
+  /**
+   * Tests that verifies the player's behavior when trying to pick up an item that isn't available.
+   */
+  @Test
+  public void testPickItemNotAvailable() {
+    Iroom initialRoom = world.getRoomByIndex(0); 
+    Iplayer player = new Player("Test Player", initialRoom.getCoordinates(), 5);
+    world.addPlayer(player);
+
+    int initialItemCount = player.getItems().size();
+    if (initialRoom.getItems().isEmpty()) {
+      player.addItem(new Item("Non-existent Item", 0, 0)); 
+    }
+    int finalItemCount = player.getItems().size();
+
+    Assert.assertEquals(initialItemCount, finalItemCount);
+  }
+  
+  /**
+   * Tests that the player cannot pick up an item when they are already at their maximum capacity.
+   */
+  @Test
+  public void testPickItemBeyondMaximum() {
+      Iroom initialRoom = world.getRoomByIndex(0); 
+      Iplayer player = new Player("Test Player", initialRoom.getCoordinates(), 1); 
+      Iitem item1 = new Item("Test Item 1", 10, 0);
+      Iitem item2 = new Item("Test Item 2", 20, 0);
+      player.addItem(item1);
+      initialRoom.addItem(item2);
+      world.addPlayer(player);
+
+      int initialItemCount = player.getItems().size();
+      player.addItem(item2); 
+      int finalItemCount = player.getItems().size();
+
+      Assert.assertEquals(initialItemCount, finalItemCount);
+  }
+  
+  
 }

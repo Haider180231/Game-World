@@ -1,0 +1,5029 @@
+Computer player added at room Winter Garden.
+Player TestPlayer added at room Wine Cellar.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702184422.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Wine Cellar.
+Player TestPlayer added at room Hedge Maze.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Hedge Maze.
+Items in the room:
+ - Loud Noise
+Visible rooms:
+ - Green House
+ - Piazza
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lilac Room.
+Player TestPlayer added at room Lilac Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Tight Hat.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Dining Hall.
+Player TestPlayer added at room Armory.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 22, 19
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Armory.
+Player TestPlayer added at room Armory.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Piazza.
+Player TestPlayer added at room Master Suite.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Library.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lilac Room.
+Player TestPlayer added at room Parlor.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702184506.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Tennessee Room.
+Player TestPlayer added at room Carriage House.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Carriage House.
+Items in the room:
+ - Chain Saw
+ - Big Red Hammer
+Visible rooms:
+ - Winter Garden
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Drawing Room.
+Player TestPlayer added at room Lilac Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Tight Hat.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Armory.
+Player TestPlayer added at room Library.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 4, 23
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Wine Cellar.
+Player TestPlayer added at room Billiard Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Carriage House.
+Player TestPlayer added at room Library.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Master Suite.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Piazza.
+Player TestPlayer added at room Parlor.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702184523.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Carriage House.
+Player TestPlayer added at room Lilac Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Lilac Room.
+Items in the room:
+ - Tight Hat
+Visible rooms:
+ - Lancaster Room
+ - Master Suite
+ - Servants' Quarters
+ - Tennessee Room
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lancaster Room.
+Player TestPlayer added at room Wine Cellar.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Rat Poison.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Drawing Room.
+Player TestPlayer added at room Drawing Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 22, 13
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Library.
+Player TestPlayer added at room Lilac Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Armory.
+Player TestPlayer added at room Trophy Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Billiard Room.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Servants' Quarters.
+Player TestPlayer added at room Dining Hall.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702184552.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Foyer.
+Player TestPlayer added at room Tennessee Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Tennessee Room.
+Items in the room:
+Visible rooms:
+ - Dining Hall
+ - Lilac Room
+ - Master Suite
+ - Parlor
+ - Trophy Room
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lilac Room.
+Player TestPlayer added at room Wine Cellar.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Rat Poison.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Foyer.
+Player TestPlayer added at room Lancaster Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 0, 3
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Tennessee Room.
+Player TestPlayer added at room Billiard Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Kitchen.
+Player TestPlayer added at room Billiard Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Armory.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Servants' Quarters.
+Player TestPlayer added at room Wine Cellar.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702184715.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Library.
+Player TestPlayer added at room Tennessee Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Tennessee Room.
+Items in the room:
+Visible rooms:
+ - Dining Hall
+ - Lilac Room
+ - Master Suite
+ - Parlor
+ - Trophy Room
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Billiard Room.
+Player TestPlayer added at room Kitchen.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Crepe Pan.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lilac Room.
+Player TestPlayer added at room Armory.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 22, 19
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Wine Cellar.
+Player TestPlayer added at room Kitchen.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Winter Garden.
+Player TestPlayer added at room Kitchen.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Dining Hall.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Carriage House.
+Player TestPlayer added at room Lancaster Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702184832.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Foyer.
+Player TestPlayer added at room Tennessee Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Tennessee Room.
+Items in the room:
+Visible rooms:
+ - Dining Hall
+ - Lilac Room
+ - Master Suite
+ - Parlor
+ - Trophy Room
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Foyer.
+Player TestPlayer added at room Drawing Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Letter Opener.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Library.
+Player TestPlayer added at room Lilac Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 2, 9
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Foyer.
+Player TestPlayer added at room Wine Cellar.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Lancaster Room.
+Player TestPlayer added at room Servants' Quarters.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Lancaster Room.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Parlor.
+Player TestPlayer added at room Foyer.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702184848.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Winter Garden.
+Player TestPlayer added at room Trophy Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Trophy Room.
+Items in the room:
+ - Duck Decoy
+ - Monkey Hand
+Visible rooms:
+ - Billiard Room
+ - Dining Hall
+ - Library
+ - Tennessee Room
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Foyer.
+Player TestPlayer added at room Billiard Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Billiard Cue.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Wine Cellar.
+Player TestPlayer added at room Drawing Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 22, 13
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Winter Garden.
+Player TestPlayer added at room Lilac Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Servants' Quarters.
+Player TestPlayer added at room Billiard Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Armory.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Hedge Maze.
+Player TestPlayer added at room Foyer.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702185159.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Parlor.
+Player TestPlayer added at room Piazza.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Piazza.
+Items in the room:
+ - Civil War Cannon
+Visible rooms:
+ - Foyer
+ - Hedge Maze
+ - Winter Garden
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Carriage House.
+Player TestPlayer added at room Servants' Quarters.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Broom Stick.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Billiard Room.
+Player TestPlayer added at room Carriage House.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 28, 0
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Servants' Quarters.
+Player TestPlayer added at room Hedge Maze.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Lancaster Room.
+Player TestPlayer added at room Drawing Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Armory.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Parlor.
+Player TestPlayer added at room Lancaster Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702185502.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Trophy Room.
+Player TestPlayer added at room Piazza.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Piazza.
+Items in the room:
+ - Civil War Cannon
+Visible rooms:
+ - Foyer
+ - Hedge Maze
+ - Winter Garden
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Carriage House.
+Player TestPlayer added at room Dining Hall.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+No items in the room for player TestPlayer to pick up.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Billiard Room.
+Player TestPlayer added at room Lilac Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 2, 9
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Parlor.
+Player TestPlayer added at room Winter Garden.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Drawing Room.
+Player TestPlayer added at room Parlor.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Dining Hall.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Armory.
+Player TestPlayer added at room Tennessee Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702185531.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Billiard Room.
+Player TestPlayer added at room Kitchen.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Kitchen.
+Items in the room:
+ - Crepe Pan
+ - Sharp Knife
+Visible rooms:
+ - Dining Hall
+ - Parlor
+ - Wine Cellar
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Master Suite.
+Player TestPlayer added at room Hedge Maze.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Loud Noise.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Piazza.
+Player TestPlayer added at room Parlor.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 10, 5
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Drawing Room.
+Player TestPlayer added at room Billiard Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Lilac Room.
+Player TestPlayer added at room Trophy Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Billiard Room.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Winter Garden.
+Player TestPlayer added at room Kitchen.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702185702.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lancaster Room.
+Player TestPlayer added at room Armory.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Armory.
+Items in the room:
+ - Revolver
+Visible rooms:
+ - Billiard Room
+ - Dining Hall
+ - Drawing Room
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Armory.
+Player TestPlayer added at room Hedge Maze.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Loud Noise.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Carriage House.
+Player TestPlayer added at room Piazza.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 28, 12
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Kitchen.
+Player TestPlayer added at room Billiard Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Foyer.
+Player TestPlayer added at room Drawing Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Armory.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Kitchen.
+Player TestPlayer added at room Winter Garden.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702185725.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Trophy Room.
+Player TestPlayer added at room Drawing Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Drawing Room.
+Items in the room:
+ - Letter Opener
+Visible rooms:
+ - Armory
+ - Dining Hall
+ - Foyer
+ - Wine Cellar
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Billiard Room.
+Player TestPlayer added at room Trophy Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Duck Decoy.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Parlor.
+Player TestPlayer added at room Foyer.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 26, 13
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Tennessee Room.
+Player TestPlayer added at room Carriage House.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Dining Hall.
+Player TestPlayer added at room Foyer.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Drawing Room.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Hedge Maze.
+Player TestPlayer added at room Armory.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702185728.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Kitchen.
+Player TestPlayer added at room Armory.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Armory.
+Items in the room:
+ - Revolver
+Visible rooms:
+ - Billiard Room
+ - Dining Hall
+ - Drawing Room
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Nursery.
+Player TestPlayer added at room Lancaster Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Silken Cord.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Drawing Room.
+Player TestPlayer added at room Servants' Quarters.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 6, 3
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Servants' Quarters.
+Player TestPlayer added at room Billiard Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Tennessee Room.
+Player TestPlayer added at room Winter Garden.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Carriage House.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Trophy Room.
+Player TestPlayer added at room Armory.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702185834.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Carriage House.
+Player TestPlayer added at room Kitchen.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Kitchen.
+Items in the room:
+ - Crepe Pan
+ - Sharp Knife
+Visible rooms:
+ - Dining Hall
+ - Parlor
+ - Wine Cellar
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Piazza.
+Player TestPlayer added at room Master Suite.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Shoe Horn.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Winter Garden.
+Player TestPlayer added at room Master Suite.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 2, 15
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Library.
+Player TestPlayer added at room Piazza.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Lancaster Room.
+Player TestPlayer added at room Trophy Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Billiard Room.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lancaster Room.
+Player TestPlayer added at room Master Suite.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702185933.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Winter Garden.
+Player TestPlayer added at room Winter Garden.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Winter Garden.
+Items in the room:
+Visible rooms:
+ - Carriage House
+ - Piazza
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Dining Hall.
+Player TestPlayer added at room Tennessee Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+No items in the room for player TestPlayer to pick up.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Trophy Room.
+Player TestPlayer added at room Nursery.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 0, 23
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Green House.
+Player TestPlayer added at room Drawing Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Green House.
+Player TestPlayer added at room Servants' Quarters.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Lancaster Room.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Hedge Maze.
+Player TestPlayer added at room Foyer.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702185943.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Winter Garden.
+Player TestPlayer added at room Armory.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Armory.
+Items in the room:
+ - Revolver
+Visible rooms:
+ - Billiard Room
+ - Dining Hall
+ - Drawing Room
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Armory.
+Player TestPlayer added at room Piazza.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Civil War Cannon.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Tennessee Room.
+Player TestPlayer added at room Trophy Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 10, 21
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Trophy Room.
+Player TestPlayer added at room Billiard Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Billiard Room.
+Player TestPlayer added at room Winter Garden.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Carriage House.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Hedge Maze.
+Player TestPlayer added at room Master Suite.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702190112.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Winter Garden.
+Player TestPlayer added at room Lancaster Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Lancaster Room.
+Items in the room:
+ - Silken Cord
+Visible rooms:
+ - Lilac Room
+ - Servants' Quarters
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Tennessee Room.
+Player TestPlayer added at room Lancaster Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Silken Cord.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Piazza.
+Player TestPlayer added at room Servants' Quarters.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 6, 3
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Piazza.
+Player TestPlayer added at room Wine Cellar.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Armory.
+Player TestPlayer added at room Billiard Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Armory.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Piazza.
+Player TestPlayer added at room Armory.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702190210.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Foyer.
+Player TestPlayer added at room Nursery.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Nursery.
+Items in the room:
+ - Bad Cream
+Visible rooms:
+ - Library
+ - Master Suite
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lilac Room.
+Player TestPlayer added at room Master Suite.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Shoe Horn.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Dining Hall.
+Player TestPlayer added at room Drawing Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 22, 13
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lilac Room.
+Player TestPlayer added at room Lilac Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Nursery.
+Player TestPlayer added at room Tennessee Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Dining Hall.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Dining Hall.
+Player TestPlayer added at room Lilac Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702192612.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lilac Room.
+Player TestPlayer added at room Carriage House.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Carriage House.
+Items in the room:
+ - Chain Saw
+ - Big Red Hammer
+Visible rooms:
+ - Winter Garden
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Tennessee Room.
+Player TestPlayer added at room Piazza.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Civil War Cannon.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Foyer.
+Player TestPlayer added at room Parlor.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 10, 5
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Winter Garden.
+Player TestPlayer added at room Hedge Maze.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Green House.
+Player TestPlayer added at room Dining Hall.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Armory.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Armory.
+Player TestPlayer added at room Library.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702192629.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Trophy Room.
+Player TestPlayer added at room Kitchen.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Kitchen.
+Items in the room:
+ - Crepe Pan
+ - Sharp Knife
+Visible rooms:
+ - Dining Hall
+ - Parlor
+ - Wine Cellar
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Tennessee Room.
+Player TestPlayer added at room Lilac Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Tight Hat.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Library.
+Player TestPlayer added at room Servants' Quarters.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 6, 3
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Library.
+Player TestPlayer added at room Master Suite.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Lancaster Room.
+Player TestPlayer added at room Servants' Quarters.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Lancaster Room.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Library.
+Player TestPlayer added at room Nursery.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702192643.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lilac Room.
+Player TestPlayer added at room Lancaster Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Lancaster Room.
+Items in the room:
+ - Silken Cord
+Visible rooms:
+ - Lilac Room
+ - Servants' Quarters
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Dining Hall.
+Player TestPlayer added at room Green House.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Trowel.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lancaster Room.
+Player TestPlayer added at room Carriage House.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 28, 0
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lancaster Room.
+Player TestPlayer added at room Piazza.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Nursery.
+Player TestPlayer added at room Piazza.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Foyer.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Library.
+Player TestPlayer added at room Parlor.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702192701.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Dining Hall.
+Player TestPlayer added at room Nursery.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Nursery.
+Items in the room:
+ - Bad Cream
+Visible rooms:
+ - Library
+ - Master Suite
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Library.
+Player TestPlayer added at room Lilac Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Tight Hat.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Armory.
+Player TestPlayer added at room Wine Cellar.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 22, 5
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Trophy Room.
+Player TestPlayer added at room Tennessee Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Drawing Room.
+Player TestPlayer added at room Kitchen.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Dining Hall.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Billiard Room.
+Player TestPlayer added at room Kitchen.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702192734.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Nursery.
+Player TestPlayer added at room Nursery.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Nursery.
+Items in the room:
+ - Bad Cream
+Visible rooms:
+ - Library
+ - Master Suite
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Parlor.
+Player TestPlayer added at room Dining Hall.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+No items in the room for player TestPlayer to pick up.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Armory.
+Player TestPlayer added at room Lilac Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 2, 9
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Drawing Room.
+Player TestPlayer added at room Nursery.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Tennessee Room.
+Player TestPlayer added at room Dining Hall.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Armory.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lilac Room.
+Player TestPlayer added at room Drawing Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702192750.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Trophy Room.
+Player TestPlayer added at room Nursery.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Nursery.
+Items in the room:
+ - Bad Cream
+Visible rooms:
+ - Library
+ - Master Suite
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Servants' Quarters.
+Player TestPlayer added at room Foyer.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+No items in the room for player TestPlayer to pick up.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Nursery.
+Player TestPlayer added at room Winter Garden.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 30, 6
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Wine Cellar.
+Player TestPlayer added at room Foyer.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Piazza.
+Player TestPlayer added at room Foyer.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Drawing Room.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lancaster Room.
+Player TestPlayer added at room Servants' Quarters.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702192753.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Library.
+Player TestPlayer added at room Servants' Quarters.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Servants' Quarters.
+Items in the room:
+ - Broom Stick
+Visible rooms:
+ - Lancaster Room
+ - Lilac Room
+ - Parlor
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Trophy Room.
+Player TestPlayer added at room Master Suite.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Shoe Horn.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Tennessee Room.
+Player TestPlayer added at room Hedge Maze.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 30, 20
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Carriage House.
+Player TestPlayer added at room Dining Hall.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Drawing Room.
+Player TestPlayer added at room Trophy Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Billiard Room.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Carriage House.
+Player TestPlayer added at room Servants' Quarters.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702193112.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Foyer.
+Player TestPlayer added at room Green House.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Green House.
+Items in the room:
+ - Trowel
+ - Pinking Shears
+Visible rooms:
+ - Hedge Maze
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Carriage House.
+Player TestPlayer added at room Dining Hall.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 12, 11
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lancaster Room.
+Player TestPlayer added at room Master Suite.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Wine Cellar.
+Player TestPlayer added at room Foyer.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702195430.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Nursery.
+Player TestPlayer added at room Trophy Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Trophy Room.
+Items in the room:
+ - Duck Decoy
+ - Monkey Hand
+Visible rooms:
+ - Billiard Room
+ - Dining Hall
+ - Library
+ - Tennessee Room
+Players in the room:
+ - No other players
+Target in the room:
+ - No target
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Winter Garden.
+Player TestPlayer added at room Drawing Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 22, 13
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Green House.
+Player TestPlayer added at room Tennessee Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Piazza.
+Player TestPlayer added at room Foyer.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702195435.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Tennessee Room.
+Player TestPlayer added at room Green House.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Green House.
+Items in the room:
+ - Trowel
+ - Pinking Shears
+Visible rooms:
+ - Hedge Maze
+Players in the room:
+ - No other players
+Target in the room:
+ - No target
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Dining Hall.
+Player TestPlayer added at room Servants' Quarters.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 6, 3
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Winter Garden.
+Player TestPlayer added at room Drawing Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Servants' Quarters.
+Player TestPlayer added at room Library.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702201441.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Tennessee Room.
+Player TestPlayer added at room Master Suite.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Master Suite.
+Items in the room:
+ - Shoe Horn
+Visible rooms:
+ - Library
+ - Lilac Room
+ - Nursery
+ - Tennessee Room
+Players in the room:
+ - No other players
+Target in the room:
+ - No target
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Billiard Room.
+Player Player1 added at room Green House.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: Player1's turn.
+Action: exit
+Computer player added at room Drawing Room.
+Player TestPlayer added at room Dining Hall.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 12, 11
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Armory.
+Player TestPlayer added at room Master Suite.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Winter Garden.
+Player TestPlayer added at room Carriage House.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702201502.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Nursery.
+Player TestPlayer added at room Tennessee Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Tennessee Room.
+Items in the room:
+ - No items
+Visible rooms:
+ - Dining Hall
+ - Lilac Room
+ - Master Suite
+ - Parlor
+ - Trophy Room
+Players in the room:
+ - No other players
+Target in the room:
+ - No target
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Wine Cellar.
+Player Player1 added at room Winter Garden.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: Player1's turn.
+Action: exit
+Computer player added at room Green House.
+Player TestPlayer added at room Green House.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 28, 26
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Wine Cellar.
+Player TestPlayer added at room Carriage House.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Kitchen.
+Player TestPlayer added at room Tennessee Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702201620.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Piazza.
+Player TestPlayer added at room Lilac Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Lilac Room.
+Items in the room:
+ - Tight Hat
+Visible rooms:
+ - Lancaster Room
+ - Master Suite
+ - Servants' Quarters
+ - Tennessee Room
+Players in the room:
+ - No other players
+Target in the room:
+ - No target
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Kitchen.
+Player TestPlayer added at room Servants' Quarters.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 6: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 7: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 8: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 9: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Game over. Maximum turns reached.
+Computer player added at room Nursery.
+Player Player1 added at room Lilac Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: Player1's turn.
+Action: exit
+Computer player added at room Lilac Room.
+Player TestPlayer added at room Wine Cellar.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 22, 5
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Trophy Room.
+Player TestPlayer added at room Hedge Maze.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Foyer.
+Player TestPlayer added at room Nursery.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702201928.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lilac Room.
+Player TestPlayer added at room Parlor.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Parlor.
+Items in the room:
+ - No items
+Visible rooms:
+ - Dining Hall
+ - Kitchen
+ - Servants' Quarters
+ - Tennessee Room
+Players in the room:
+ - No other players
+Target in the room:
+ - No target
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Parlor.
+Player TestPlayer added at room Winter Garden.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 6: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 7: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 8: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 9: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Game over. Maximum turns reached.
+Computer player added at room Drawing Room.
+Player Player1 added at room Billiard Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: Player1's turn.
+Action: exit
+Computer player added at room Hedge Maze.
+Player TestPlayer added at room Carriage House.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 28, 0
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Servants' Quarters.
+Player TestPlayer added at room Hedge Maze.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Billiard Room.
+Player TestPlayer added at room Armory.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702201954.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lancaster Room.
+Player TestPlayer added at room Library.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Library.
+Items in the room:
+ - No items
+Visible rooms:
+ - Master Suite
+ - Nursery
+ - Trophy Room
+Players in the room:
+ - No other players
+Target in the room:
+ - No target
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Carriage House.
+Player TestPlayer added at room Kitchen.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 6: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 7: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 8: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 9: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Game over. Maximum turns reached.
+Computer player added at room Lancaster Room.
+Player Player1 added at room Lilac Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: Player1's turn.
+Action: exit
+Computer player added at room Lilac Room.
+Player TestPlayer added at room Carriage House.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 28, 0
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Hedge Maze.
+Player TestPlayer added at room Drawing Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Tennessee Room.
+Player TestPlayer added at room Piazza.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702203358.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Carriage House.
+Player TestPlayer added at room Master Suite.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Master Suite.
+Items in the room:
+ - Shoe Horn
+Visible rooms:
+ - Library
+ - Lilac Room
+ - Nursery
+ - Tennessee Room
+Players in the room:
+ - No other players
+Target in the room:
+ - No target
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lilac Room.
+Player TestPlayer added at room Winter Garden.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 6: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 7: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 8: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 9: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Game over. Maximum turns reached.
+Computer player added at room Library.
+Player Player1 added at room Lancaster Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: Player1's turn.
+Action: exit
+Computer player added at room Drawing Room.
+Player TestPlayer added at room Lancaster Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 0, 3
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Servants' Quarters.
+Player TestPlayer added at room Foyer.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Dining Hall.
+Player TestPlayer added at room Dining Hall.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702203410.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Winter Garden.
+Player TestPlayer added at room Lilac Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Lilac Room.
+Items in the room:
+ - Tight Hat
+Visible rooms:
+ - Lancaster Room
+ - Master Suite
+ - Servants' Quarters
+ - Tennessee Room
+Players in the room:
+ - No other players
+Target in the room:
+ - No target
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Trophy Room.
+Player TestPlayer added at room Library.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 6: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 7: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 8: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 9: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Game over. Maximum turns reached.
+Computer player added at room Lancaster Room.
+Player Player1 added at room Drawing Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: Player1's turn.
+Action: exit
+Computer player added at room Armory.
+Player TestPlayer added at room Armory.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 22, 19
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Servants' Quarters.
+Player TestPlayer added at room Foyer.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Lancaster Room.
+Player TestPlayer added at room Nursery.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702204130.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Wine Cellar.
+Player TestPlayer added at room Master Suite.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Master Suite.
+Items in the room:
+ - Shoe Horn
+Visible rooms:
+ - Library
+ - Lilac Room
+ - Nursery
+ - Tennessee Room
+Players in the room:
+ - No other players
+Target in the room:
+ - No target
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Library.
+Player TestPlayer added at room Billiard Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 6: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 7: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 8: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 9: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Game over. Maximum turns reached.
+Computer player added at room Parlor.
+Player Player1 added at room Nursery.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: Player1's turn.
+Action: exit
+Computer player added at room Drawing Room.
+Player TestPlayer added at room Trophy Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Duck Decoy.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Kitchen.
+Player TestPlayer added at room Tennessee Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 8, 11
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Green House.
+Player TestPlayer added at room Wine Cellar.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Billiard Room.
+Player TestPlayer added at room Nursery.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Library.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Trophy Room.
+Player TestPlayer added at room Nursery.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702204213.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Kitchen.
+Player TestPlayer added at room Lilac Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Lilac Room.
+Items in the room:
+ - Tight Hat
+Visible rooms:
+ - Lancaster Room
+ - Master Suite
+ - Servants' Quarters
+ - Tennessee Room
+Players in the room:
+ - No other players
+Target in the room:
+ - No target
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lancaster Room.
+Player TestPlayer added at room Winter Garden.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 6: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 7: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 8: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 9: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Game over. Maximum turns reached.
+Computer player added at room Lilac Room.
+Player Player1 added at room Lancaster Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: Player1's turn.
+Action: exit
+Computer player added at room Servants' Quarters.
+Player TestPlayer added at room Library.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+No items in the room for player TestPlayer to pick up.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Library.
+Player TestPlayer added at room Hedge Maze.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 30, 20
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Lancaster Room.
+Player TestPlayer added at room Green House.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Wine Cellar.
+Player TestPlayer added at room Dining Hall.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Armory.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Foyer.
+Player TestPlayer added at room Master Suite.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702204232.png.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Servants' Quarters.
+Player TestPlayer added at room Lancaster Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Lancaster Room.
+Items in the room:
+ - Silken Cord
+Visible rooms:
+ - Lilac Room
+ - Servants' Quarters
+Players in the room:
+ - No other players
+Target in the room:
+ - No target
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Master Suite.
+Player TestPlayer added at room Master Suite.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 6: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 7: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 8: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 9: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Game over. Maximum turns reached.
+Computer player added at room Parlor.
+Player Player1 added at room Drawing Room.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: Player1's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 5: Player1's turn.
+Action: exit
+Computer player added at room Wine Cellar.
+Player TestPlayer added at room Servants' Quarters.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Broom Stick.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Foyer.
+Player TestPlayer added at room Nursery.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 0, 23
+Items:
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Computer player added at room Wine Cellar.
+Player TestPlayer added at room Foyer.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Computer player added at room Tennessee Room.
+Player TestPlayer added at room Armory.
+Turn 0: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Billiard Room.
+
+Target moved.
+
+Turn 2: Computer's turn.
+Computer player took its turn.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: exit
+Player TestPlayer added at room Wine Cellar.
+Turn 0: TestPlayer's turn.
+Action: display map
+Map displayed and saved to res/world20240702211329.png.
+Action completed
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Player TestPlayer added at room Drawing Room.
+Turn 0: TestPlayer's turn.
+Action: look around
+Player TestPlayer is in: Drawing Room.
+Items in the room:
+ - Letter Opener
+Visible rooms:
+ - Armory
+ - Dining Hall
+ - Foyer
+ - Wine Cellar
+Players in the room:
+ - No other players
+Target in the room:
+ - No target
+Action completed
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Player TestPlayer added at room Foyer.
+Turn 0: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 2: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 3: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 4: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 5: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 6: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 7: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 8: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Turn 9: TestPlayer's turn.
+Action: next turn
+Invalid action.
+
+Target moved.
+
+Game over. Maximum turns reached.
+Player Player1 added at room Wine Cellar.
+Turn 0: Player1's turn.
+Action: move
+Player Player1 moved to room Dining Hall.
+Action completed
+
+Target moved.
+
+Turn 1: Player1's turn.
+Action: move
+Player Player1 moved to room Armory.
+Action completed
+
+Target moved.
+
+Turn 2: Player1's turn.
+Action: exit
+Player TestPlayer added at room Nursery.
+Turn 0: TestPlayer's turn.
+Action: pick item
+Player TestPlayer picked up item Bad Cream.
+Action completed
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Player TestPlayer added at room Library.
+Turn 0: TestPlayer's turn.
+Action: display player
+Player Name: TestPlayer
+Coordinates: 4, 23
+Items:
+Action completed
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Player TestPlayer added at room Piazza.
+Turn 0: TestPlayer's turn.
+Action: exit
+Player TestPlayer added at room Servants' Quarters.
+Turn 0: TestPlayer's turn.
+Action: display room
+Action completed
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit
+Player TestPlayer added at room Trophy Room.
+Turn 0: TestPlayer's turn.
+Action: move
+Player TestPlayer moved to room Billiard Room.
+Action completed
+
+Target moved.
+
+Turn 1: TestPlayer's turn.
+Action: exit

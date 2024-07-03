@@ -50,25 +50,32 @@ public class GameController {
     final Scanner scanner = new Scanner(System.in);
     Random random = new Random();
 
-    Iroom initialRoom = world.getRoomByIndex(random.nextInt(world.getRooms().size()));
-    Iplayer computerPlayer = new ComputerPlayer("Computer", 
-        initialRoom.getCoordinates(), 5); 
-    world.addPlayer(computerPlayer);
-    players.add(computerPlayer);
-    log("Computer player added at room " + initialRoom.getName() + ".\n");
-
-    // add player
+    // Add players
     while (true) {
-      System.out.println("Do you want to add a human player? (yes/no)");
-      String response = scanner.nextLine();
-      if (!"yes".equalsIgnoreCase(response)) {
+      System.out.println("Do you want to add a player? (yes/no)");
+      String response = scanner.nextLine().trim().toLowerCase();
+      if (!"yes".equals(response)) {
         break;
       }
+      System.out.println("Enter player type (human/computer):");
+      String playerType;
+      while (true) {
+        playerType = scanner.nextLine().trim().toLowerCase();
+        if ("human".equals(playerType) || "computer".equals(playerType)) {
+          break;
+        } else {
+          System.out.println("Invalid player type. Please enter 'human' or 'computer':");
+        }
+      }
       System.out.println("Enter player name:");
-      String playerName = scanner.nextLine();
-      initialRoom = world.getRoomByIndex(random.nextInt(world.getRooms().size()));
-      Iplayer player = new Player(playerName, 
-          initialRoom.getCoordinates(), 5);  
+      String playerName = scanner.nextLine().trim();
+      Iroom initialRoom = world.getRoomByIndex(random.nextInt(world.getRooms().size()));
+      Iplayer player;
+      if ("computer".equals(playerType)) {
+        player = new ComputerPlayer(playerName, initialRoom.getCoordinates(), 5);
+      } else {
+        player = new Player(playerName, initialRoom.getCoordinates(), 5);
+      }
       world.addPlayer(player);
       players.add(player);
       log("Player " + playerName + " added at room " + initialRoom.getName() + ".\n");
@@ -83,42 +90,46 @@ public class GameController {
         System.out.println("Computer player is taking its turn...");
         ((ComputerPlayer) currentPlayer).takeTurn(world);
         log("Computer player took its turn.\n\n");
+        System.out.println("Action completed\n");
       } else {
-        System.out.println("Choose an action: move, pick item, "
-            + "look around, display map, display player, exit");
-        String action = scanner.nextLine();
+        System.out.println("Choose an action: move, pick item, look around, display map, display player, display room, exit");
+        String action = scanner.nextLine().trim().toLowerCase();
         log("Action: " + action + "\n");
 
         switch (action) {
           case "move":
             movePlayer(currentPlayer, scanner);
-            log("\n");
+            System.out.println("Action completed\n");
+            log("Action completed\n\n");
             break;
-
           case "pick item":
             pickItem(currentPlayer);
-            log("\n");
+            System.out.println("Action completed\n");
+            log("Action completed\n\n");
             break;
-
           case "look around":
             lookAround(currentPlayer);
-            log("\n");
+            System.out.println("Action completed\n");
+            log("Action completed\n\n");
             break;
-
           case "display map":
             displayMap();
-            log("\n");
+            System.out.println("Action completed\n");
+            log("Action completed\n\n");
             break;
-
           case "display player":
             displayPlayer(currentPlayer);
-            log("\n");
+            System.out.println("Action completed\n");
+            log("Action completed\n\n");
             break;
-
+          case "display room":
+            displayRoom(scanner);
+            System.out.println("Action completed\n");
+            log("Action completed\n\n");
+            break;
           case "exit":
             closeResources(scanner);
             return;
-
           default:
             System.out.println("Invalid action.");
             log("Invalid action.\n\n");
@@ -132,7 +143,7 @@ public class GameController {
       currentPlayerIndex = (currentPlayerIndex + 1) % players.size();
       currentTurn++;
     }
-
+    System.out.println("Game over! Maximum number of turns reached.");
     log("Game over. Maximum turns reached.\n");
     closeResources(scanner);
   }
@@ -168,12 +179,13 @@ public class GameController {
       System.out.println(i + ": " + neighbors.get(i).getName());
     }
     int roomIndex = scanner.nextInt();
-    scanner.nextLine();
+    scanner.nextLine(); // consume the newline
     if (roomIndex >= 0 && roomIndex < neighbors.size()) {
       Iroom newRoom = neighbors.get(roomIndex);
       world.movePlayer(player, newRoom.getCoordinates());
       log("Player " + player.getName() + " moved to room " + newRoom.getName() + ".\n");
     } else {
+      System.out.println("Invalid room index.");
       log("Invalid room index for player " + player.getName() + ".\n");
     }
   }
@@ -190,8 +202,7 @@ public class GameController {
       player.addItem(item);
       room.getItems().remove(item);
       log("Player " + player.getName() + " picked up item " + item.getName() + ".\n");
-      System.out.println("Player " + player.getName() 
-          + " picked up item " + item.getName() + ".\n");
+      System.out.println("Player " + player.getName() + " picked up item " + item.getName() + ".\n");
     } else {
       log("No items in the room for player " + player.getName() + " to pick up.\n");
       System.out.println("No items in the room for player " + player.getName() + " to pick up.\n");
@@ -199,7 +210,8 @@ public class GameController {
   }
 
   /**
-   * Allows the player to look around the current room and see items and neighboring rooms.
+   * Allows the player to look around the current room and see items, neighboring rooms,
+   * other players, and the target.
    *
    * @param player the player looking around
    */
@@ -207,15 +219,46 @@ public class GameController {
     Iroom room = findRoomByCoordinates(player.getCoordinates());
     if (room != null) {
       StringBuilder output = new StringBuilder();
-      output.append("Player " + player.getName() + " is in: " + room.getName() + ".\n");
+      output.append("Player ").append(player.getName()).append(" is in: ").append(room.getName()).append(".\n");
+
       output.append("Items in the room:\n");
-      for (Iitem item : room.getItems()) {
-        output.append(" - " + item.getName() + "\n");
+      if (room.getItems().isEmpty()) {
+        output.append(" - No items\n");
+      } else {
+        for (Iitem item : room.getItems()) {
+          output.append(" - ").append(item.getName()).append("\n");
+        }
       }
+
       output.append("Visible rooms:\n");
-      for (Iroom neighbor : world.getNeighbors(room)) {
-        output.append(" - " + neighbor.getName() + "\n");
+      List<Iroom> neighbors = world.getNeighbors(room);
+      if (neighbors.isEmpty()) {
+        output.append(" - No visible rooms\n");
+      } else {
+        for (Iroom neighbor : neighbors) {
+          output.append(" - ").append(neighbor.getName()).append("\n");
+        }
       }
+
+      output.append("Players in the room:\n");
+      boolean playersFound = false;
+      for (Iplayer p : world.getPlayers()) {
+        if (!p.equals(player) && p.getCoordinates().equals(room.getCoordinates())) {
+          output.append(" - ").append(p.getName()).append("\n");
+          playersFound = true;
+        }
+      }
+      if (!playersFound) {
+        output.append(" - No other players\n");
+      }
+
+      output.append("Target in the room:\n");
+      if (world.getTarget().getCoordinates().equals(room.getCoordinates())) {
+        output.append(" - ").append(world.getTarget().getName()).append("\n");
+      } else {
+        output.append(" - No target\n");
+      }
+
       String outputStr = output.toString();
       System.out.print(outputStr);
       log(outputStr);
@@ -246,8 +289,7 @@ public class GameController {
   private void displayPlayer(Iplayer player) {
     StringBuilder output = new StringBuilder();
     output.append("Player Name: " + player.getName() + "\n");
-    output.append("Coordinates: " + player.getCoordinates().getFirst() 
-        + ", " + player.getCoordinates().getSecond() + "\n");
+    output.append("Coordinates: " + player.getCoordinates().getFirst() + ", " + player.getCoordinates().getSecond() + "\n");
     output.append("Items:\n");
     for (Iitem item : player.getItems()) {
       output.append(" - " + item.getName() + " (Damage: " + item.getDamage() + ")\n");
@@ -255,6 +297,18 @@ public class GameController {
     String outputStr = output.toString();
     System.out.print(outputStr);
     log(outputStr);
+  }
+
+  /**
+   * Displays information about a room by its index.
+   *
+   * @param scanner the scanner to read input
+   */
+  private void displayRoom(Scanner scanner) {
+    System.out.println("Enter the room index:");
+    int roomIndex = scanner.nextInt();
+    scanner.nextLine(); // consume the newline
+    world.displayRoomInfo(roomIndex);
   }
 
   /**
