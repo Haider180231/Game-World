@@ -274,10 +274,18 @@ The JAR file provides several functionalities that you can use to interact with 
    - **Command**: `display map`
    - **Description**: Generates and saves a graphical representation of the game world map to a file. You will be prompted to enter the output file path.
    
+**Attack the Target**
+   - **Command**: `attack`
+   - **Description**: Allows a player to attack the target character if they are in the same room. You will be prompted to enter the player's name.
+
 **Display Player Information**
    - **Command**: `display player`
    - **Description**: Displays the information of a specific player, including their current coordinates and the items they are carrying.
-   
+
+**Move the Pet**
+   - **Command**: `attack`
+   - **Description**: Moves the pet to a new room. You will be prompted to enter the room index.
+
 **Exit the Game**
    - **Command**: `exit`
    - **Description**: Exits the game.
