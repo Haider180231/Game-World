@@ -15,6 +15,16 @@ public class GameWorld implements Igameworld {
   private List<Iplayer> players;
   private boolean targetShouldMove = true;
 
+  /**
+   * Constructs a GameWorld object with specified dimensions, target, pet, and rooms.
+   *
+   * @param rows the number of rows in the game world
+   * @param columns the number of columns in the game world
+   * @param name the name of the game world
+   * @param target the target in the game world
+   * @param pet the pet in the game world
+   * @param rooms the list of rooms in the game world
+   */
   public GameWorld(int rows, int columns, String name, 
       Itarget target, Ipet pet, List<Iroom> rooms) {
     this.rows = rows;
@@ -97,7 +107,9 @@ public class GameWorld implements Igameworld {
 
   @Override
   public void moveTarget() {
-    if (!targetShouldMove) return;
+    if (!targetShouldMove) {
+      return;
+    }
     int currentRoomIndex = 0;
     if (target.getCoordinates() != null) {
       for (int i = 0; i < rooms.size(); i++) {
@@ -156,19 +168,30 @@ public class GameWorld implements Igameworld {
   public void movePet(Tuple<Integer, Integer> newCoordinates) {
     pet.move(newCoordinates);
   }
-  
-  public void setTarget(Itarget target) {
-    this.target = target;
-  }
-  
+
+  @Override
   public void addPet(Ipet pet) {
     this.pet = pet;
   }
-  
+
+  /**
+   * Sets the target in the game world.
+   *
+   * @param target the target to set
+   */
+  public void setTarget(Itarget target) {
+    this.target = target;
+  }
+
+  /**
+   * Sets whether the target should move.
+   *
+   * @param shouldMove true if the target should move, false otherwise
+   */
   public void setTargetShouldMove(boolean shouldMove) {
     this.targetShouldMove = shouldMove;
   }
-  
+
   @Override
   public void nextTurn() {
     for (Iplayer player : players) {

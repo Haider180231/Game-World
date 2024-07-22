@@ -62,14 +62,16 @@ public class Player implements Iplayer {
   public String lookAround(Igameworld world) {
     Iroom currentRoom = world.getRoomByCoordinates(coordinates);
     StringBuilder output = new StringBuilder();
-    output.append("Player ").append(name).append(" is in: ").append(currentRoom.getName()).append(".\n");
+    output.append("Player ").append(name).append(
+        " is in: ").append(currentRoom.getName()).append(".\n");
 
     output.append("Items in the room:\n");
     if (currentRoom.getItems().isEmpty()) {
       output.append(" - No items\n");
     } else {
       for (Iitem item : currentRoom.getItems()) {
-        output.append(" - ").append(item.getName()).append(" (Damage: ").append(item.getDamage()).append(")\n");
+        output.append(" - ").append(
+            item.getName()).append(" (Damage: ").append(item.getDamage()).append(")\n");
       }
     }
 

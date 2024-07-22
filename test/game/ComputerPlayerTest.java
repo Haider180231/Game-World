@@ -92,14 +92,16 @@ public class ComputerPlayerTest {
     String result = computerPlayer.attack(target, world);
     Assert.assertEquals(90, target.getHealth());
     Assert.assertTrue(computerPlayer.getItems().isEmpty());
-    Assert.assertEquals("Computer Player Computer Player attacked Test Target with 10 damage.", result);
+    Assert.assertEquals(
+        "Computer Player Computer Player attacked Test Target with 10 damage.", result);
   }
 
   @Test
   public void testAttackTargetWithoutItem() {
     String result = computerPlayer.attack(target, world);
     Assert.assertEquals(99, target.getHealth());
-    Assert.assertEquals("Computer Player Computer Player attacked Test Target with 1 damage.", result);
+    Assert.assertEquals(
+        "Computer Player Computer Player attacked Test Target with 1 damage.", result);
   }
 
   @Test

@@ -1,10 +1,11 @@
 package game;
 
+import java.io.IOException;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.IOException;
+
 
 /**
  * Unit tests for the Pet class.

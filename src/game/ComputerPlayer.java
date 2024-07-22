@@ -107,7 +107,7 @@ public class ComputerPlayer implements Iplayer {
         output.append(" - ").append(neighbor.getName()).append("\n");
 
         if (pet != null && pet.getCoordinates().equals(neighbor.getCoordinates())) {
-          continue; // 如果宠物在邻近房间，不显示该房间的任何信息
+          continue; 
         }
 
         output.append("Items in ").append(neighbor.getName()).append(":\n");
@@ -115,7 +115,8 @@ public class ComputerPlayer implements Iplayer {
           output.append("  - No items\n");
         } else {
           for (Iitem item : neighbor.getItems()) {
-            output.append("  - ").append(item.getName()).append(" (Damage: ").append(item.getDamage()).append(")\n");
+            output.append("  - ").append(item.getName()).append(
+                " (Damage: ").append(item.getDamage()).append(")\n");
           }
         }
 
@@ -152,7 +153,6 @@ public class ComputerPlayer implements Iplayer {
       }
     }
 
-    // 找到伤害最大的物品
     Iitem maxDamageItem = items.stream()
         .max((item1, item2) -> Integer.compare(item1.getDamage(), item2.getDamage()))
         .orElse(null);

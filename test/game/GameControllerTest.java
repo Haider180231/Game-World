@@ -135,7 +135,8 @@ public class GameControllerTest {
    */
   @Test
   public void testPlayerOrder() {
-    String input = "yes\nhuman\nPlayer1\n0\nyes\nhuman\nPlayer2\n1\nno\n0\nmove\n0\nmove\n0\nexit\n";
+    String input = "yes\nhuman\nPlayer1\n0"
+        + "\nyes\nhuman\nPlayer2\n1\nno\n0\nmove\n0\nmove\n0\nexit\n";
     inContent = new ByteArrayInputStream(input.getBytes());
     System.setIn(inContent);
 
