@@ -203,7 +203,7 @@ public class GameWorldTest {
    */
   @Test
   public void testTargetStartsInRoom0() {
-    Assert.assertEquals(new Tuple<>(0, 0), world.getTarget().getCoordinates());
+    Assert.assertEquals(new Tuple<>(22, 19), world.getTarget().getCoordinates());
   }
 
   /**
@@ -383,6 +383,4 @@ public class GameWorldTest {
 
     Assert.assertEquals(initialItemCount, finalItemCount);
   }
-  
-  
 }

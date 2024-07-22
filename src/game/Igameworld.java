@@ -1,6 +1,5 @@
 package game;
 
-import java.io.IOException;
 import java.util.List;
 
 /**
@@ -11,7 +10,7 @@ public interface Igameworld {
   /**
    * Adds a room to the game world.
    *
-   * @param room the room to add
+   * @param room the room to be added
    */
   void addRoom(Iroom room);
 
@@ -24,70 +23,77 @@ public interface Igameworld {
   Iroom getRoomByIndex(int index);
 
   /**
-   * Gets the list of all rooms in the game world.
+   * Gets a list of all rooms in the game world.
    *
-   * @return the list of rooms
+   * @return a list of all rooms
    */
   List<Iroom> getRooms();
 
   /**
-   * Gets the target character in the game world.
+   * Gets the target in the game world.
    *
-   * @return the target character
+   * @return the target
    */
   Itarget getTarget();
 
   /**
+   * Gets the pet in the game world.
+   *
+   * @return the pet
+   */
+  Ipet getPet();
+
+  /**
    * Gets the neighboring rooms of a specified room.
    *
-   * @param room the room for which to get the neighbors
-   * @return the list of neighboring rooms
+   * @param room the room for which to find neighbors
+   * @return a list of neighboring rooms
    */
   List<Iroom> getNeighbors(Iroom room);
 
   /**
-   * Displays information about a specified room.
+   * Displays information about a room.
    *
-   * @param index the index of the room to display information about
+   * @param index the index of the room
    */
   void displayRoomInfo(int index);
 
   /**
-   * Moves the target character to the next room.
+   * Moves the target to a new location.
    */
   void moveTarget();
 
   /**
    * Adds a player to the game world.
    *
-   * @param player the player to add
+   * @param player the player to be added
    */
   void addPlayer(Iplayer player);
 
   /**
-   * Gets the list of all players in the game world.
+   * Gets a list of all players in the game world.
    *
-   * @return the list of players
+   * @return a list of all players
    */
   List<Iplayer> getPlayers();
 
   /**
-   * Moves a player to new coordinates.
+   * Moves a player to a new set of coordinates.
    *
-   * @param player the player to move
-   * @param newCoordinates the new coordinates to move the player to
+   * @param player         the player to be moved
+   * @param newCoordinates the new coordinates for the player
    */
   void movePlayer(Iplayer player, Tuple<Integer, Integer> newCoordinates);
 
   /**
-   * Gets the number of columns in the game world.
+   * Gets the number of columns in the game world grid.
    *
    * @return the number of columns
    */
   int getColumns();
 
   /**
-   * Gets the number of rows in the game world.
+   * Gets the number of rows in the game world grid.
    *
    * @return the number of rows
    */
@@ -97,7 +103,26 @@ public interface Igameworld {
    * Gets a room by its coordinates.
    *
    * @param coordinates the coordinates of the room
-   * @return the room at the specified coordinates, or null if no room is found
+   * @return the room at the specified coordinates
    */
   Iroom getRoomByCoordinates(Tuple<Integer, Integer> coordinates);
+
+  /**
+   * Moves the pet to a new set of coordinates.
+   *
+   * @param newCoordinates the new coordinates for the pet
+   */
+  void movePet(Tuple<Integer, Integer> newCoordinates);
+
+  /**
+   * Adds a pet to the game world.
+   *
+   * @param pet the pet to be added
+   */
+  void addPet(Ipet pet);
+
+  /**
+   * Advances the game world to the next turn.
+   */
+  void nextTurn();
 }

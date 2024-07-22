@@ -20,6 +20,15 @@ public class Main {
 
     try {
       Igameworld world = MansionParser.parseMansion(filePath);
+
+      Iroom room0 = world.getRoomByIndex(0);
+      Tuple<Integer, Integer> room0Coordinates = room0.getCoordinates();
+
+      Itarget staticTarget = new Target(5, "Static Target", room0Coordinates);
+      ((GameWorld) world).setTarget(staticTarget);
+
+      ((GameWorld) world).setTargetShouldMove(false);
+
       GameView view = new GameView();
       GameController controller = new GameController(world, view, maxTurns, logFilePath);
 

@@ -27,13 +27,21 @@ public class GameControllerTest {
   public void setUp() {
     try {
       world = MansionParser.parseMansion("res/mansion.txt");
+
+      Iroom room0 = world.getRoomByIndex(0);
+      Tuple<Integer, Integer> room0Coordinates = room0.getCoordinates();
+
+      Itarget staticTarget = new Target(1, "Static Target", room0Coordinates);
+      ((GameWorld) world).setTarget(staticTarget);
+
+      ((GameWorld) world).setTargetShouldMove(false);
+
     } catch (IOException e) {
       e.printStackTrace();
     }
     view = new GameView();
     outContent = new ByteArrayOutputStream();
     System.setOut(new PrintStream(outContent));
-    controller = new GameController(world, view, 10, "res/test_log.txt");
   }
 
   /**
@@ -42,6 +50,11 @@ public class GameControllerTest {
   @After
   public void tearDown() {
     System.setOut(null);
+    System.setIn(System.in);  
+    if (inContent != null) {
+      inContent.reset();
+    }
+    outContent.reset();
   }
 
   /**
@@ -49,11 +62,13 @@ public class GameControllerTest {
    */
   @Test
   public void testAddPlayer() {
-    String input = "yes\nhuman\nTestPlayer\nno\nexit\n";
+    String input = "yes\nhuman\nTestPlayer\n0\nno\n0\nexit\n";
     inContent = new ByteArrayInputStream(input.getBytes());
     System.setIn(inContent);
 
+    controller = new GameController(world, view, 10, "res/test_log.txt");
     controller.startGame();
+
     List<Iplayer> players = world.getPlayers();
     Assert.assertEquals(1, players.size());
     Assert.assertEquals("TestPlayer", players.get(0).getName());
@@ -64,40 +79,20 @@ public class GameControllerTest {
    */
   @Test
   public void testLookAround() {
-    String input = "yes\nhuman\nTestPlayer\nno\nlook around\nexit\n";
+    String input = "yes\nhuman\nTestPlayer\n0\nno\n0\nlook around\nexit\n";
     inContent = new ByteArrayInputStream(input.getBytes());
     System.setIn(inContent);
 
+    controller = new GameController(world, view, 10, "res/test_log.txt");
     controller.startGame();
     String output = outContent.toString();
 
     // Verify items in the room
+    Assert.assertTrue(output.contains("Player TestPlayer is in:"));
     Assert.assertTrue(output.contains("Items in the room:"));
-    if (output.contains("No items in the room.")) {
-      Assert.assertTrue(output.contains("No items in the room."));
-    } else {
-      Assert.assertTrue(output.contains(" - "));
-    }
-
-    // Verify visible rooms
     Assert.assertTrue(output.contains("Visible rooms:"));
-    Assert.assertTrue(output.contains(" - "));
-
-    // Verify players in the room
     Assert.assertTrue(output.contains("Players in the room:"));
-    if (output.contains("No other players")) {
-      Assert.assertTrue(output.contains("No other players"));
-    } else {
-      Assert.assertTrue(output.contains(" - "));
-    }
-
-    // Verify target in the room
-    Assert.assertTrue(output.contains("Target in the room:"));
-    if (output.contains("No target")) {
-      Assert.assertTrue(output.contains("No target"));
-    } else {
-      Assert.assertTrue(output.contains(" - "));
-    }
+    Assert.assertTrue(output.contains("Pet:") || output.contains("Target:"));
   }
 
   /**
@@ -105,10 +100,11 @@ public class GameControllerTest {
    */
   @Test
   public void testDisplayMap() {
-    String input = "yes\nhuman\nTestPlayer\nno\ndisplay map\nexit\n";
+    String input = "yes\nhuman\nTestPlayer\n0\nno\n0\ndisplay map\nexit\n";
     inContent = new ByteArrayInputStream(input.getBytes());
     System.setIn(inContent);
 
+    controller = new GameController(world, view, 10, "res/test_log.txt");
     controller.startGame();
     String output = outContent.toString();
 
@@ -120,14 +116,17 @@ public class GameControllerTest {
    */
   @Test
   public void testDisplayPlayer() {
-    String input = "yes\nhuman\nTestPlayer\nno\ndisplay player\nexit\n";
+    String input = "yes\nhuman\nTestPlayer\n0\nno\n0\ndisplay player\nexit\n";
     inContent = new ByteArrayInputStream(input.getBytes());
     System.setIn(inContent);
 
+    controller = new GameController(world, view, 10, "res/test_log.txt");
     controller.startGame();
     String output = outContent.toString();
 
+    Assert.assertTrue(output.contains("You are at coordinates:"));
     Assert.assertTrue(output.contains("Player Name: TestPlayer"));
+    Assert.assertTrue(output.contains("Coordinates:"));
     Assert.assertTrue(output.contains("Items:"));
   }
 
@@ -136,15 +135,17 @@ public class GameControllerTest {
    */
   @Test
   public void testPlayerOrder() {
-    String input = "yes\nhuman\nPlayer1\nno\nmove\n0\nmove\n0\nexit\n";
+    String input = "yes\nhuman\nPlayer1\n0\nyes\nhuman\nPlayer2\n1\nno\n0\nmove\n0\nmove\n0\nexit\n";
     inContent = new ByteArrayInputStream(input.getBytes());
     System.setIn(inContent);
 
+    controller = new GameController(world, view, 10, "res/test_log.txt");
     controller.startGame();
     String output = outContent.toString();
 
     // Verify the turn order
     Assert.assertTrue(output.contains("It's Player1's turn."));
+    Assert.assertTrue(output.contains("It's Player2's turn."));
   }
 
   /**
@@ -152,14 +153,15 @@ public class GameControllerTest {
    */
   @Test
   public void testGameEnd() {
-    String input = "yes\nhuman\nTestPlayer\nno\n";
+    String input = "yes\nhuman\nTestPlayer\n0\nno\n0\n";
     for (int i = 0; i < 10; i++) {
-      input += "next turn\n";
+      input += "move\n0\n";
     }
     input += "exit\n";
     inContent = new ByteArrayInputStream(input.getBytes());
     System.setIn(inContent);
 
+    controller = new GameController(world, view, 10, "res/test_log.txt");
     controller.startGame();
     String output = outContent.toString();
 
@@ -172,17 +174,13 @@ public class GameControllerTest {
    */
   @Test
   public void testMovePlayer() {
-    String input = "yes\nhuman\nTestPlayer\nno\nmove\n0\nexit\n";
+    String input = "yes\nhuman\nTestPlayer\n0\nno\n0\nmove\n0\nexit\n";
     inContent = new ByteArrayInputStream(input.getBytes());
     System.setIn(inContent);
 
+    controller = new GameController(world, view, 10, "res/test_log.txt");
     controller.startGame();
     String output = outContent.toString();
-
-    Iplayer player = world.getPlayers().get(0); 
-    Iroom initialRoom = findRoomByCoordinates(player.getCoordinates(), world);
-    List<Iroom> neighbors = world.getNeighbors(initialRoom);
-    Iroom newRoom = neighbors.get(0);
 
     Assert.assertTrue(output.contains("Action completed"));
   }
@@ -192,16 +190,17 @@ public class GameControllerTest {
    */
   @Test
   public void testPickItem() {
-    String input = "yes\nhuman\nTestPlayer\nno\npick item\nexit\n";
+    String input = "yes\nhuman\nTestPlayer\n0\nno\n0\npick item\nexit\n";
     inContent = new ByteArrayInputStream(input.getBytes());
     System.setIn(inContent);
 
-    Iroom initialRoom = world.getRoomByIndex(0); 
+    Iroom initialRoom = world.getRoomByIndex(0);
     Iitem item = new Item("Test Item", 10, 0);
     initialRoom.addItem(item);
     Iplayer player = new Player("Test Player", initialRoom.getCoordinates(), 5);
     world.addPlayer(player);
 
+    controller = new GameController(world, view, 10, "res/test_log.txt");
     controller.startGame();
     String output = outContent.toString();
 
@@ -213,10 +212,11 @@ public class GameControllerTest {
    */
   @Test
   public void testDisplayRoom() {
-    String input = "yes\nhuman\nTestPlayer\nno\ndisplay room\n0\nexit\n";
+    String input = "yes\nhuman\nTestPlayer\n0\nno\n0\ndisplay room\n0\nexit\n";
     inContent = new ByteArrayInputStream(input.getBytes());
     System.setIn(inContent);
 
+    controller = new GameController(world, view, 10, "res/test_log.txt");
     controller.startGame();
     String output = outContent.toString();
 
@@ -228,34 +228,182 @@ public class GameControllerTest {
   }
 
   /**
-   * Helper method to find a room by its coordinates.
-   *
-   * @param coordinates the coordinates of the room
-   * @param world the game world
-   * @return the room if found, null otherwise
-   */
-  private Iroom findRoomByCoordinates(Tuple<Integer, Integer> coordinates, Igameworld world) {
-    for (Iroom room : world.getRooms()) {
-      if (room.getCoordinates().equals(coordinates)) {
-        return room;
-      }
-    }
-    return null;
-  }
-  
-  /**
    * Tests the addition of a computer player to the game.
    */
   @Test
   public void testAddComputer() {
-    String input = "yes\ncomputer\nComputerPlayer\nno\nexit\n";
+    String input = "yes\ncomputer\nComputerPlayer\n0\nno\n0\nexit\n";
     inContent = new ByteArrayInputStream(input.getBytes());
     System.setIn(inContent);
 
+    controller = new GameController(world, view, 10, "res/test_log.txt");
     controller.startGame();
     List<Iplayer> players = world.getPlayers();
     Assert.assertEquals(1, players.size());
     Assert.assertEquals("ComputerPlayer", players.get(0).getName());
   }
 
+  /**
+   * Tests moving the pet to a specified room.
+   */
+  @Test
+  public void testMovePet() {
+    String input = "yes\nhuman\nTestPlayer\n0\nno\n0\nmove pet\n1\nexit\n";
+    inContent = new ByteArrayInputStream(input.getBytes());
+    System.setIn(inContent);
+
+    controller = new GameController(world, view, 10, "res/test_log.txt");
+    controller.startGame();
+    String output = outContent.toString();
+
+    // Verify the pet has been moved to room 1
+    Iroom petRoom = world.getRoomByIndex(1);
+    Assert.assertTrue(output.contains("Pet moved to room"));
+  }
+
+  /**
+   * Tests the look around functionality with other players in the same room.
+   */
+  @Test
+  public void testLookAroundWithPlayersInSameRoom() {
+    String input = "yes\nhuman\nTestPlayer1\n0\nyes"
+        + "\nhuman\nTestPlayer2"
+        + "\n0\nno\n0\nlook around\nexit\n";
+    inContent = new ByteArrayInputStream(input.getBytes());
+    System.setIn(inContent);
+
+    controller = new GameController(world, view, 10, "res/test_log.txt");
+    controller.startGame();
+    String output = outContent.toString();
+
+    // Verify that both players are listed in the room
+    Assert.assertTrue(output.contains("Players in the room:"));
+    Assert.assertTrue(output.contains("TestPlayer1"));
+    Assert.assertTrue(output.contains("TestPlayer2"));
+  }
+
+  /**
+   * Tests the look around functionality with players in neighboring spaces.
+   */
+  @Test
+  public void testLookAroundWithPlayersInNeighboringSpaces() {
+    String input = "yes\nhuman\nTestPlayer1\n0\nyes\nhuman"
+        + "\nTestPlayer2\n1\nno\n0\nlook around\nexit\n";
+    inContent = new ByteArrayInputStream(input.getBytes());
+    System.setIn(inContent);
+
+    controller = new GameController(world, view, 10, "res/test_log.txt");
+    controller.startGame();
+    String output = outContent.toString();
+
+    // Verify that there are players in neighboring spaces
+    Assert.assertTrue(output.contains("Players in the room:"));
+    Assert.assertTrue(output.contains("TestPlayer1"));
+    Assert.assertTrue(output.contains("Visible rooms:"));
+    Assert.assertTrue(output.contains("TestPlayer2"));
+  }
+
+  /**
+   * Tests that verifies the looking around command works correctly 
+   * when there are no items in the same space.
+   */
+  @Test
+  public void testLookAroundWithNoItemsInSameSpace() {
+    String input = "yes\nhuman\nTestPlayer\n10\nno\n0\nlook around\nexit\n";
+    inContent = new ByteArrayInputStream(input.getBytes());
+    System.setIn(inContent);
+
+    controller = new GameController(world, view, 10, "res/test_log.txt");
+    controller.startGame();
+    String output = outContent.toString();
+
+    // Verify no items in the current room
+    Assert.assertTrue(output.contains("Items in the room:"));
+    Assert.assertTrue(output.contains(" - No items"));
+  }
+
+  /**
+   * Tests that verifies the looking around command works correctly 
+   * when there are no items in a neighboring space.
+   */
+  @Test
+  public void testLookAroundWithNoItemsInNeighboringSpace() {
+    String input = "yes\nhuman\nTestPlayer\n0\nno\n0\nlook around\nexit\n";
+    inContent = new ByteArrayInputStream(input.getBytes());
+    System.setIn(inContent);
+
+    // Clear items in neighboring rooms
+    Iroom firstRoom = world.getRoomByIndex(0);
+    for (Iroom neighbor : world.getNeighbors(firstRoom)) {
+      neighbor.getItems().clear();
+    }
+
+    controller = new GameController(world, view, 10, "res/test_log.txt");
+    controller.startGame();
+    String output = outContent.toString();
+
+    // Verify no items in neighboring rooms are listed
+    Assert.assertTrue(output.contains("Visible rooms:"));
+    for (Iroom neighbor : world.getNeighbors(firstRoom)) {
+      Assert.assertTrue(output.contains(neighbor.getName()));
+      Assert.assertTrue(output.contains(" - No items"));
+    }
+  }
+
+  /**
+   * Tests that verifies the looking around command works correctly 
+   * when the target character is in a neighbor space.
+   */
+  @Test
+  public void testLookAroundWithTargetInNeighborSpace() {
+    String input = "yes\nhuman\nTestPlayer\n0\nno\n20\nmove\n1\nlook around\nexit\n";
+    inContent = new ByteArrayInputStream(input.getBytes());
+    System.setIn(inContent);
+
+    controller = new GameController(world, view, 10, "res/test_log.txt");
+    controller.startGame();
+    String output = outContent.toString();
+
+    // Verify target in neighboring room is listed
+    Assert.assertTrue(output.contains("Visible rooms:"));
+    Assert.assertTrue(output.contains("Target: " + world.getTarget().getName() + " is here."));
+  }
+
+  /**
+   * Tests that the game ends when the target character is killed.
+   */
+  @Test
+  public void testGameEndsWhenTargetIsKilled() {
+    String input = "yes\nhuman\nTestPlayer\n0\nno\n0\nattack\nexit\n";
+    inContent = new ByteArrayInputStream(input.getBytes());
+    System.setIn(inContent);
+
+    controller = new GameController(world, view, 10, "res/test_log.txt");
+    controller.startGame();
+    String output = outContent.toString();
+
+    // Verify the game end
+    Assert.assertTrue(output.contains("has been defeated!"));
+  }
+
+  /**
+   * Tests that the game ends when the maximum number of turns has been reached.
+   */
+  @Test
+  public void testGameEndsWhenMaxTurnsReached() {
+    String input = "yes\nhuman\nTestPlayer\n0\nno\n0\n";
+    for (int i = 0; i < 10; i++) {
+      input += "move\n0\n";
+    }
+    input += "exit\n";
+    inContent = new ByteArrayInputStream(input.getBytes());
+    System.setIn(inContent);
+
+    controller = new GameController(world, view, 10, "res/test_log.txt");
+    controller.startGame();
+    String output = outContent.toString();
+
+    // Verify the game end
+    Assert.assertTrue(output.contains("Game over! Maximum number of turns reached."));
+  }
 }

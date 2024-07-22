@@ -51,12 +51,20 @@ public class MansionParser {
       final String targetName = targetNameBuilder.toString().trim();
       final Target target = new Target(targetHealth, targetName, new Tuple<>(0, 0));
 
-      // Read the third line: number of rooms
+      // Read the third line: pet's name
       String line3 = reader.readLine();
       if (line3 == null || line3.trim().isEmpty()) {
+        throw new IOException("File is missing pet information");
+      }
+      final String petName = line3.trim();
+      final Pet pet = new Pet(petName, new Tuple<>(0, 0));
+
+      // Read the fourth line: number of rooms
+      String line4 = reader.readLine();
+      if (line4 == null || line4.trim().isEmpty()) {
         throw new IOException("File is missing room count information");
       }
-      final int numRooms = parseInteger(line3.trim(), "Invalid room count value");
+      final int numRooms = parseInteger(line4.trim(), "Invalid room count value");
 
       final List<Iroom> rooms = new ArrayList<>();
       for (int i = 0; i < numRooms; i++) {
@@ -83,11 +91,11 @@ public class MansionParser {
       }
 
       // Read the number of items
-      String line4 = reader.readLine();
-      if (line4 == null || line4.trim().isEmpty()) {
+      String line5 = reader.readLine();
+      if (line5 == null || line5.trim().isEmpty()) {
         throw new IOException("File is missing item count information");
       }
-      final int numItems = parseInteger(line4.trim(), "Invalid item count value");
+      final int numItems = parseInteger(line5.trim(), "Invalid item count value");
 
       for (int i = 0; i < numItems; i++) {
         final String itemLine = reader.readLine();
@@ -109,7 +117,15 @@ public class MansionParser {
         rooms.get(roomIndex).addItem(item);
       }
 
-      return new GameWorld(rows, columns, name, target, rooms);
+      // Set target and pet initial coordinates to the first room's coordinates
+      if (!rooms.isEmpty()) {
+        Tuple<Integer, Integer> initialCoordinates = rooms.get(0).getCoordinates();
+        target.moveTarget(initialCoordinates);
+        pet.move(initialCoordinates);
+      }
+
+      GameWorld gameWorld = new GameWorld(rows, columns, name, target, pet, rooms);
+      return gameWorld;
     } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
       throw new IOException("Failed to parse file", e);
     }

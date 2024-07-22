@@ -85,6 +85,20 @@ public class GameView {
       g.fillOval(targetX, targetY, targetSize, targetSize);
     }
 
+    // Draw the pet in the center of its current location
+    int petSize = 15;
+    Ipet pet = world.getPet();
+    if (pet != null) {
+      Tuple<Integer, Integer> petCoords = pet.getCoordinates();
+      if (petCoords != null) {
+        g.setColor(Color.GREEN);
+        int petX = petCoords.getSecond() * cellSize + padding + (cellSize - petSize) / 2;
+        int petY = petCoords.getFirst() * cellSize + padding + (cellSize - petSize) / 2;
+        g.fillRect(petX, petY, petSize, petSize);
+        g.drawString(pet.getName(), petX + petSize + 2, petY + petSize / 2);
+      }
+    }
+
     g.dispose();
     System.out.println("Image created successfully.");
     File outputFile = new File(imageOutputPath);

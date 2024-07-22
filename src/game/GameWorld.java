@@ -10,22 +10,17 @@ public class GameWorld implements Igameworld {
   private int rows;
   private int columns;
   private Itarget target;
+  private Ipet pet;
   private List<Iroom> rooms;
   private List<Iplayer> players;
+  private boolean targetShouldMove = true;
 
-  /**
-   * Constructs a new GameWorld.
-   *
-   * @param rows the number of rows in the game world
-   * @param columns the number of columns in the game world
-   * @param name the name of the game world
-   * @param target the target character in the game world
-   * @param rooms the list of rooms in the game world
-   */
-  public GameWorld(int rows, int columns, String name, Itarget target, List<Iroom> rooms) {
+  public GameWorld(int rows, int columns, String name, 
+      Itarget target, Ipet pet, List<Iroom> rooms) {
     this.rows = rows;
     this.columns = columns;
     this.target = target;
+    this.pet = pet;
     this.rooms = rooms;
     this.players = new ArrayList<>();
   }
@@ -51,6 +46,11 @@ public class GameWorld implements Igameworld {
   @Override
   public Itarget getTarget() {
     return target;
+  }
+
+  @Override
+  public Ipet getPet() {
+    return pet;
   }
 
   @Override
@@ -87,10 +87,17 @@ public class GameWorld implements Igameworld {
         System.out.println(" - " + player.getName());
       }
     }
+    if (pet != null && pet.getCoordinates().equals(room.getCoordinates())) {
+      System.out.println("Pet: " + pet.getName() + " is here.");
+    }
+    if (target != null && target.getCoordinates().equals(room.getCoordinates())) {
+      System.out.println("Target: " + target.getName() + " is here.");
+    }
   }
 
   @Override
   public void moveTarget() {
+    if (!targetShouldMove) return;
     int currentRoomIndex = 0;
     if (target.getCoordinates() != null) {
       for (int i = 0; i < rooms.size(); i++) {
@@ -143,5 +150,32 @@ public class GameWorld implements Igameworld {
       }
     }
     return null;
+  }
+
+  @Override
+  public void movePet(Tuple<Integer, Integer> newCoordinates) {
+    pet.move(newCoordinates);
+  }
+  
+  public void setTarget(Itarget target) {
+    this.target = target;
+  }
+  
+  public void addPet(Ipet pet) {
+    this.pet = pet;
+  }
+  
+  public void setTargetShouldMove(boolean shouldMove) {
+    this.targetShouldMove = shouldMove;
+  }
+  
+  @Override
+  public void nextTurn() {
+    for (Iplayer player : players) {
+      player.takeTurn(this);
+    }
+    if (pet != null) {
+      pet.moveDfs(this);
+    }
   }
 }
