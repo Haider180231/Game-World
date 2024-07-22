@@ -59,6 +59,10 @@ Test classes are located in the `test/gameworld` directory and include:
 - `RoomTest.java`
 - `TargetTest.java`
 - `ItemTest.java`
+- `ComputerPlayerTest.java`
+- `GameControllerTest.java`
+- `PlaerTest.java`
+- `PetTest.java`
 
 
 ## Example Run
@@ -67,98 +71,172 @@ The following section describes the content of an example run of the program. Th
 
 ### Run Log
 
-```plaintext
-Player John added at room Hedge Maze.
-Player computer1 added at room Green House.
-Player Haidong added at room Trophy Room.
-Turn 0: John's turn.
+```
+Player haidong added at room 0.
+Pet placed in room 0.
+Turn 0: haidong's turn.
+Player haidong is at coordinates: 22, 19
+Action: look around
+Player looked around
+Target moved.
+
+Turn 1: haidong's turn.
+Player haidong is at coordinates: 22, 19
 Action: move
-Player John moved to room Piazza.
+Player haidong moved to room Billiard Room.
 Action completed
 
 Target moved.
 
-Turn 1: computer1's turn.
-Computer player took its turn.
+Turn 2: haidong's turn.
+Player haidong is at coordinates: 16, 21
+Action: look around
+Player looked around
+Target moved.
+
+Turn 3: haidong's turn.
+Player haidong is at coordinates: 16, 21
+Action: move pet
+Pet moved to room Carriage House.
+Action completed
 
 Target moved.
 
-Turn 2: Haidong's turn.
+Turn 4: haidong's turn.
+Player haidong is at coordinates: 16, 21
+Action: move
+Player haidong moved to room Armory.
+Action completed
+
+Target moved.
+
+Turn 5: haidong's turn.
+Player haidong is at coordinates: 22, 19
 Action: pick item
-Player Haidong picked up item Duck Decoy.
+Player haidong picked up item Revolver.
 Action completed
 
 Target moved.
 
-Turn 3: John's turn.
-Action: look around
-Player John is in: Piazza.
-Items in the room:
- - Civil War Cannon
-Visible rooms:
- - Foyer
- - Hedge Maze
- - Winter Garden
-Players in the room:
- - No other players
-Target in the room:
- - No target
+Turn 6: haidong's turn.
+Player haidong is at coordinates: 22, 19
+Action: attack
+Player haidong attacked Static Target with 3 damage.
 Action completed
 
 Target moved.
 
-Turn 4: computer1's turn.
+Turn 7: haidong's turn.
+Player haidong is at coordinates: 22, 19
+Action: attack
+Player haidong attacked Static Target with 1 damage.
+Action completed
+
+Target moved.
+
+Turn 8: haidong's turn.
+Player haidong is at coordinates: 22, 19
+Action: attack
+Player haidong attacked Static Target with 1 damage.
+Target Static Target has been defeated!
+Action completed
+
+Target moved.
+
+Target Static Target has been defeated!
+Player c1 added at room 0.
+Pet placed in room 0.
+Turn 0: c1's turn.
+Player c1 is at coordinates: 22, 19
 Computer player took its turn.
 
 Target moved.
 
-Turn 5: Haidong's turn.
-Action: display player
-Player Name: Haidong
-Coordinates: 10, 21
-Items:
- - Duck Decoy (Damage: 3)
-Action completed
-
-Target moved.
-
-Turn 6: John's turn.
-Action: display room
-Action completed
-
-Target moved.
-
-Turn 7: computer1's turn.
+Turn 1: c1's turn.
+Player c1 is at coordinates: 22, 19
 Computer player took its turn.
 
 Target moved.
 
-Turn 8: Haidong's turn.
-Action: display map
-Map displayed and saved to res/world20240702212300.png.
-Action completed
+Turn 2: c1's turn.
+Player c1 is at coordinates: 22, 19
+Computer player took its turn.
 
 Target moved.
 
-Turn 9: John's turn.
+Target Static Target has been defeated!
+Player haidong added at room 0.
+Pet placed in room 0.
+Turn 0: haidong's turn.
+Player haidong is at coordinates: 22, 19
 Action: look around
-Player John is in: Piazza.
-Items in the room:
- - Civil War Cannon
-Visible rooms:
- - Foyer
- - Hedge Maze
- - Winter Garden
-Players in the room:
- - No other players
-Target in the room:
- - No target
-Action completed
+Player looked around
+Target moved.
 
+Turn 1: haidong's turn.
+Player haidong is at coordinates: 22, 19
+Action: look around
+Player looked around
+Target moved.
+
+Turn 2: haidong's turn.
+Player haidong is at coordinates: 22, 19
+Action: look around
+Player looked around
+Target moved.
+
+Turn 3: haidong's turn.
+Player haidong is at coordinates: 22, 19
+Action: look around
+Player looked around
+Target moved.
+
+Turn 4: haidong's turn.
+Player haidong is at coordinates: 22, 19
+Action: look around
+Player looked around
+Target moved.
+
+Turn 5: haidong's turn.
+Player haidong is at coordinates: 22, 19
+Action: look around
+Player looked around
+Target moved.
+
+Turn 6: haidong's turn.
+Player haidong is at coordinates: 22, 19
+Action: look around
+Player looked around
+Target moved.
+
+Turn 7: haidong's turn.
+Player haidong is at coordinates: 22, 19
+Action: look around
+Player looked around
+Target moved.
+
+Turn 8: haidong's turn.
+Player haidong is at coordinates: 22, 19
+Action: look around
+Player looked around
+Target moved.
+
+Turn 9: haidong's turn.
+Player haidong is at coordinates: 22, 19
+Action: look around
+Player looked around
 Target moved.
 
 Game over. Maximum turns reached.
+
 ```
+
+## Limitation and Assuming
+
+For testing purposes, I set up a Target that doesn't move to be born in room 0, and then the user and the pet can choose their own birth location when they are born
+
+AI actions are relatively homogenous.
+
 
 ## Running the JAR File
 
@@ -205,19 +283,7 @@ The JAR file provides several functionalities that you can use to interact with 
    - **Description**: Exits the game.
 
 
-##The example run demonstrates the following functionalities of the game:
 
-1. Adding a human-controlled player to the game world.
-2. Adding a computer-controlled player to the game world.
-3. The player moving around the world.
-4. The player picking up an item.
-5. The player looking around to see neighboring rooms and items.
-6. Taking turns between multiple players.
-7. Displaying the description of a specific player, including their items and current location.
-8. Displaying information about a specific space in the world, including items and neighboring rooms.
-9. Creating and saving a graphical representation of the world map to the current directory.
-10. Automatically moving the target character around the world after each turn.
-11. Demonstrating the game ending after reaching the maximum number of turns.
 
 
 
