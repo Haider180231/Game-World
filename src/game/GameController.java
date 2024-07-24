@@ -21,7 +21,7 @@ public class GameController {
   private List<Iplayer> players;
   private int currentPlayerIndex;
   private boolean gameRunning;
-  private Scanner scanner; // Add a Scanner instance as a member variable
+  private Scanner scanner; 
 
   /**
    * Constructs a new GameController with the specified parameters.
@@ -63,12 +63,10 @@ public class GameController {
    * Sets up the game by clearing previous state and adding players.
    */
   private void setupGame() {
-    // 清理先前的游戏状态
     players.clear();
     currentTurn = 0;
     currentPlayerIndex = 0;
 
-    // 添加玩家
     while (true) {
       System.out.println("Do you want to add a player? (yes/no)");
       String response = scanner.nextLine().trim().toLowerCase();

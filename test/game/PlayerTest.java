@@ -274,11 +274,8 @@ public class PlayerTest {
 
     String result = player.attack(world.getTarget(), world);
 
-    // 验证攻击结果字符串是否反映了使用物品进行的攻击
     Assert.assertTrue(result.contains("Player Test Player attacked Test Target with 10 damage."));
-    // 验证目标的健康值是否减少了10（剩余90）
     Assert.assertEquals(90, world.getTarget().getHealth());
-    // 验证物品是否从玩家库存中移除
     Assert.assertTrue(player.getItems().isEmpty());
   }
 
