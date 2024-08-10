@@ -5233,3 +5233,81 @@ Computer player took its turn.
 Target moved.
 
 Game over. Maximum turns reached.
+Player TestPlayer added at room 0.
+Pet placed in room 0.
+Turn 0: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Player TestPlayer moved to room Billiard Room.
+Turn 1: TestPlayer's turn.
+Player TestPlayer is at coordinates: 16, 21
+Turn 2: TestPlayer's turn.
+Player TestPlayer is at coordinates: 16, 21
+Player TestPlayer moved to room Armory.
+Turn 3: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Turn 4: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Player TestPlayer moved to room Billiard Room.
+Turn 5: TestPlayer's turn.
+Player TestPlayer is at coordinates: 16, 21
+Turn 6: TestPlayer's turn.
+Player TestPlayer is at coordinates: 16, 21
+Player TestPlayer moved to room Armory.
+Turn 7: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Turn 8: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Player TestPlayer moved to room Billiard Room.
+Turn 9: TestPlayer's turn.
+Player TestPlayer is at coordinates: 16, 21
+Game over. Maximum turns reached.
+Player TestPlayer moved to room Armory.
+Player Testplayer added at room 0.
+Pet placed in room 0.
+Turn 0: Testplayer's turn.
+Player Testplayer is at coordinates: 22, 19
+Player Testplayer moved to room Billiard Room.
+Turn 1: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Turn 2: Testplayer's turn.
+Player Testplayer is at coordinates: 16, 21
+Player Testplayer moved to room Armory.
+Turn 3: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Turn 4: Testplayer's turn.
+Player Testplayer is at coordinates: 22, 19
+Player Testplayer moved to room Billiard Room.
+Turn 5: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Turn 6: Testplayer's turn.
+Player Testplayer is at coordinates: 16, 21
+Player Testplayer moved to room Armory.
+Turn 7: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Turn 8: Testplayer's turn.
+Player Testplayer is at coordinates: 22, 19
+Player Testplayer moved to room Billiard Room.
+Turn 9: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Game over. Maximum turns reached.
+Test mode: Player and pet set without GUI interaction.Turn 0: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Turn 1: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Turn 2: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Turn 3: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Turn 4: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Turn 5: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Turn 6: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Turn 7: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Turn 8: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Turn 9: TestPlayer's turn.
+Player TestPlayer is at coordinates: 22, 19
+Game over. Maximum turns reached.

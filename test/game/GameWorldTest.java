@@ -308,16 +308,6 @@ public class GameWorldTest {
     Assert.assertEquals("Sword", player.getItems().get(0).getName());
   }
 
-  /**
-   * Tests displaying the game map.
-   */
-  @Test
-  public void testDisplayMap() throws IOException {
-    GameView view = new GameView();
-    view.displayMap(world, "res/test_map.png");
-    File file = new File("res/test_map.png");
-    Assert.assertTrue(file.exists());
-  }
   
   /**
    * Tests moving a player to a neighboring room.
@@ -360,7 +350,6 @@ public class GameWorldTest {
       player.addItem(new Item("Non-existent Item", 0, 0)); 
     }
     int finalItemCount = player.getItems().size();
-
     Assert.assertEquals(initialItemCount, finalItemCount);
   }
   

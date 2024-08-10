@@ -3,6 +3,8 @@ package game;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.JOptionPane;
+
 /**
  * Represents the game world, including its rooms, players, and the target.
  */
@@ -125,6 +127,12 @@ public class GameWorld implements Igameworld {
 
   @Override
   public void addPlayer(Iplayer player) {
+    if (players.size() >= 10) {
+      JOptionPane.showMessageDialog(null, 
+          "Cannot add more players. The maximum number of players (10) has been reached.", 
+          "Error", JOptionPane.ERROR_MESSAGE);
+      return; 
+    }
     players.add(player);
   }
 

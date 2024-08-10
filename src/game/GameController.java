@@ -6,8 +6,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 /**
  * Controls the game logic and flow.
@@ -21,7 +21,7 @@ public class GameController {
   private List<Iplayer> players;
   private int currentPlayerIndex;
   private boolean gameRunning;
-  private Scanner scanner; 
+  private boolean testMode = false;
 
   /**
    * Constructs a new GameController with the specified parameters.
@@ -39,7 +39,6 @@ public class GameController {
     this.players = new ArrayList<>();
     this.currentPlayerIndex = 0;
     this.gameRunning = true;
-    this.scanner = new Scanner(System.in); // Initialize the Scanner instance
     try {
       this.logWriter = new FileWriter(logFilePath, true);
     } catch (IOException e) {
@@ -48,52 +47,86 @@ public class GameController {
   }
 
   /**
+   * Sets the controller to test mode.
+   *
+   * @param testMode whether to enable test mode
+   */
+  public void setTestMode(boolean testMode) {
+    this.testMode = testMode;
+  }
+
+  /**
    * Starts the game loop, setting up the game, running it, and ending it.
    */
   public void startGame() {
-    while (gameRunning) {
-      setupGame();
-      runGame();
-      endGame();
-    }
-    scanner.close(); // Close the Scanner instance when the game ends
+    setupGame();
+    runTurn();
   }
 
   /**
    * Sets up the game by clearing previous state and adding players.
    */
-  private void setupGame() {
+  public void setupGame() {
+    if (testMode) {
+      Iplayer player1 = new Player("TestPlayer1", world.getRoomByIndex(0).getCoordinates(), 5);
+      Iplayer player2 = new Player("TestPlayer2", world.getRoomByIndex(1).getCoordinates(), 5);
+      Iplayer computerPlayer = new ComputerPlayer(
+          "AI_Player", world.getRoomByIndex(2).getCoordinates(), 5);
+
+      world.addPlayer(player1);
+      world.addPlayer(player2);
+      world.addPlayer(computerPlayer);
+
+      players.add(player1);
+      players.add(player2);
+      players.add(computerPlayer);
+
+      world.movePet(world.getRoomByIndex(3).getCoordinates());
+
+      log("Test mode: Two human players and one computer player set without GUI interaction.");
+      view.updatePlayerList();
+      view.displayGameWorld();
+      return;
+    }
+
     players.clear();
     currentTurn = 0;
     currentPlayerIndex = 0;
 
     while (true) {
-      System.out.println("Do you want to add a player? (yes/no)");
-      String response = scanner.nextLine().trim().toLowerCase();
-      if (!"yes".equals(response)) {
+      int response = JOptionPane.showConfirmDialog(
+          view, "Do you want to add a player?", 
+          "Add Player", JOptionPane.YES_NO_OPTION);
+      if (response != JOptionPane.YES_OPTION) {
         break;
       }
-      System.out.println("Enter player type (human/computer):");
-      String playerType;
-      while (true) {
-        playerType = scanner.nextLine().trim().toLowerCase();
-        if ("human".equals(playerType) || "computer".equals(playerType)) {
-          break;
-        } else {
-          System.out.println("Invalid player type. Please enter 'human' or 'computer':");
-        }
+
+      String[] playerTypes = {"human", "computer"};
+      String playerType = (String) JOptionPane.showInputDialog(
+          view, "Enter player type (human/computer):", 
+          "Player Type", JOptionPane.QUESTION_MESSAGE, null, playerTypes, playerTypes[0]);
+      if (playerType == null || (!"human".equals(playerType) && !"computer".equals(playerType))) {
+        JOptionPane.showMessageDialog(
+            view, "Invalid player type. Please enter 'human' or 'computer'.");
+        continue;
       }
-      System.out.println("Enter player name:");
-      final String playerName = scanner.nextLine().trim();
 
-      System.out.println("Choose a room number for the player ("
-          + "0 to " + (world.getRooms().size() - 1) + "):");
-      int roomIndex = scanner.nextInt();
-      scanner.nextLine(); // consume the newline
+      String playerName = JOptionPane.showInputDialog(view, "Enter player name:");
+      if (playerName == null || playerName.trim().isEmpty()) {
+        JOptionPane.showMessageDialog(view, "Invalid player name. Please enter a valid name.");
+        continue;
+      }
 
-      if (roomIndex < 0 || roomIndex >= world.getRooms().size()) {
-        System.out.println("Invalid room index. Assigning to a random room.");
-        roomIndex = new Random().nextInt(world.getRooms().size());
+      int roomIndex = -1;
+      while (roomIndex < 0 || roomIndex >= world.getRooms().size()) {
+        String roomIndexStr = JOptionPane.showInputDialog(
+            view, "Choose a room number for the player "
+                + "(0 to " + (world.getRooms().size() - 1) + "):");
+        try {
+          roomIndex = Integer.parseInt(roomIndexStr);
+        } catch (NumberFormatException e) {
+          JOptionPane.showMessageDialog(view, "Invalid room index. Please enter a number.");
+        }
       }
 
       Iroom initialRoom = world.getRoomByIndex(roomIndex);
@@ -106,142 +139,89 @@ public class GameController {
       world.addPlayer(player);
       players.add(player);
       log("Player " + playerName + " added at room " + roomIndex + ".\n");
+      view.updatePlayerList();
     }
 
-    System.out.println("Choose a room number to place the pet ("
-        + "0 to " + (world.getRooms().size() - 1) + "):");
-    int petRoomIndex = scanner.nextInt();
-    scanner.nextLine(); // consume the newline
-
-    if (petRoomIndex < 0 || petRoomIndex >= world.getRooms().size()) {
-      System.out.println("Invalid room index. Assigning to a random room.");
-      petRoomIndex = new Random().nextInt(world.getRooms().size());
+    int petRoomIndex = -1;
+    while (petRoomIndex < 0 || petRoomIndex >= world.getRooms().size()) {
+      String petRoomIndexStr = JOptionPane.showInputDialog(
+          view, "Choose a room number to place the pet "
+              + "(0 to " + (world.getRooms().size() - 1) + "):");
+      try {
+        petRoomIndex = Integer.parseInt(petRoomIndexStr);
+      } catch (NumberFormatException e) {
+        JOptionPane.showMessageDialog(view, "Invalid room index. Please enter a number.");
+      }
     }
 
     Iroom petRoom = world.getRoomByIndex(petRoomIndex);
     world.movePet(petRoom.getCoordinates());
     log("Pet placed in room " + petRoomIndex + ".\n");
+
+    view.displayGameWorld();
   }
 
   /**
-   * Runs the game loop, executing player turns and updating the game state.
+   * Runs a single turn of the game.
    */
-  public void runGame() {
-    while (currentTurn < maxTurns && gameRunning) {
+  public void runTurn() {
+    if (!gameRunning) {
+      endGame();
+      return;
+    }
+
+    if (currentTurn < maxTurns) {
       Iplayer currentPlayer = players.get(currentPlayerIndex);
-      System.out.println("It's " + currentPlayer.getName() + "'s turn.");
+      view.appendToConsole("It's " + currentPlayer.getName() + "'s turn.");
       log("Turn " + currentTurn + ": " + currentPlayer.getName() + "'s turn.\n");
 
-      // Display limited information about the player's position in the world
       Tuple<Integer, Integer> playerCoordinates = currentPlayer.getCoordinates();
-      System.out.println("You are at coordinates: " + playerCoordinates.getFirst() + ""
-          + ", " + playerCoordinates.getSecond());
-      log("Player " + currentPlayer.getName() + ""
-          + " is at coordinates: " + playerCoordinates.getFirst() + ""
-          + ", " + playerCoordinates.getSecond() + "\n");
+      view.appendToConsole(
+          "You are at coordinates: " 
+          + playerCoordinates.getFirst() + ", " + playerCoordinates.getSecond());
+      log("Player " + currentPlayer.getName() + " is at coordinates: " 
+          + playerCoordinates.getFirst() + ", " + playerCoordinates.getSecond() + "\n");
 
       if (currentPlayer instanceof ComputerPlayer) {
-        System.out.println("Computer player is taking its turn...");
+        view.appendToConsole("Computer player is taking its turn...");
         ((ComputerPlayer) currentPlayer).takeTurn(world);
         log("Computer player took its turn.\n\n");
-        System.out.println("Action completed\n");
-      } else {
-        System.out.println("Choose an action: move, pick item, look around, "
-            + "attack, display map, display player, display room, move pet, exit");
-        String action = scanner.nextLine().trim().toLowerCase();
-        log("Action: " + action + "\n");
-
-        switch (action) {
-          case "move":
-            movePlayer(currentPlayer, scanner);
-            System.out.println("Action completed\n");
-            log("Action completed\n\n");
-            break;
-          case "pick item":
-            pickItem(currentPlayer);
-            System.out.println("Action completed\n");
-            log("Action completed\n\n");
-            break;
-          case "look around":
-            System.out.println(currentPlayer.lookAround(world));
-            log("Player looked around\n");
-            break;
-          case "attack":
-            attackTarget(currentPlayer);
-            System.out.println("Action completed\n");
-            log("Action completed\n\n");
-            break;
-          case "display map":
-            displayMap();
-            System.out.println("Action completed\n");
-            log("Action completed\n\n");
-            break;
-          case "display player":
-            displayPlayer(currentPlayer);
-            System.out.println("Action completed\n");
-            log("Action completed\n\n");
-            break;
-          case "display room":
-            displayRoom(scanner);
-            System.out.println("Action completed\n");
-            log("Action completed\n\n");
-            break;
-          case "move pet":
-            movePet(scanner);
-            System.out.println("Action completed\n");
-            log("Action completed\n\n");
-            break;
-          case "exit":
-            gameRunning = false;
-            return;
-          default:
-            System.out.println("Invalid action.");
-            log("Invalid action.\n\n");
-            break;
-        }
+        view.appendToConsole("Action completed\n");
       }
-
-      world.moveTarget();
-      log("Target moved.\n\n");
-
-      if (world.getTarget().getHealth() <= 0) {
-        System.out.println("Target " + world.getTarget().getName() + " has been defeated!");
-        log("Target " + world.getTarget().getName() + " has been defeated!\n");
-        gameRunning = false;
-        return;
-      }
-
-      currentPlayerIndex = (currentPlayerIndex + 1) % players.size();
-      world.nextTurn();
-      currentTurn++;
-    }
-
-    if (currentTurn >= maxTurns) {
-      System.out.println("Game over! Maximum number of turns reached.");
+    } else {
+      view.appendToConsole("Game over! Maximum number of turns reached.");
       log("Game over. Maximum turns reached.\n");
       gameRunning = false;
+      endGame();
     }
+  }
+
+  /**
+   * Proceeds to the next turn.
+   */
+  public void nextTurn() {
+    world.moveTarget();
+    view.appendToConsole("Target moved");
+    currentPlayerIndex = (currentPlayerIndex + 1) % players.size();
+    currentTurn++;
+    runTurn();
   }
 
   /**
    * Ends the game, providing an option to save the game log.
    */
   private void endGame() {
-    System.out.println("Do you want to save the game log? (yes/no)");
-    if (scanner.hasNextLine()) {
-      String response = scanner.nextLine().trim().toLowerCase();
-      if ("yes".equals(response)) {
-        try {
-          logWriter.close();
-          System.out.println("Game log saved successfully.");
-        } catch (IOException e) {
-          e.printStackTrace();
-        }
-      } else {
-        System.out.println("Game log not saved.");
+    int response = JOptionPane.showConfirmDialog(
+        view, "Do you want to save the game log?", "Save Log", JOptionPane.YES_NO_OPTION);
+    if (response == JOptionPane.YES_OPTION) {
+      try {
+        logWriter.close();
+        JOptionPane.showMessageDialog(view, "Game log saved successfully.");
+      } catch (IOException e) {
+        e.printStackTrace();
       }
     } else {
-      System.out.println("No input available to save the game log.");
+      JOptionPane.showMessageDialog(view, "Game log not saved.");
     }
   }
 
@@ -259,40 +239,32 @@ public class GameController {
   }
 
   /**
-   * Closes the resources used by the game controller.
-   */
-  private void closeResources() {
-    try {
-      logWriter.close();
-      scanner.close();
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
-  }
-
-  /**
    * Moves the player to a new room.
    *
-   * @param player   the player to move
-   * @param scanner  the scanner for user input
+   * @param player the player to move
    */
-  public void movePlayer(Iplayer player, Scanner scanner) {
+  public void movePlayer(Iplayer player) {
     Iroom currentRoom = findRoomByCoordinates(player.getCoordinates());
     List<Iroom> neighbors = world.getNeighbors(currentRoom);
-    System.out.println("Enter the room number to move to:");
+    String[] neighborNames = new String[neighbors.size()];
     for (int i = 0; i < neighbors.size(); i++) {
-      System.out.println(i + ": " + neighbors.get(i).getName());
+      neighborNames[i] = neighbors.get(i).getName();
     }
-    int roomIndex = scanner.nextInt();
-    scanner.nextLine(); // consume the newline
-    if (roomIndex >= 0 && roomIndex < neighbors.size()) {
-      Iroom newRoom = neighbors.get(roomIndex);
-      world.movePlayer(player, newRoom.getCoordinates());
-      log("Player " + player.getName() + " moved to room " + newRoom.getName() + ".\n");
-    } else {
-      System.out.println("Invalid room index.");
-      log("Invalid room index for player " + player.getName() + ".\n");
+    String selectedRoomName = (String) JOptionPane.showInputDialog(
+        view, "Enter the room number to move to:", "Move Player", 
+        JOptionPane.QUESTION_MESSAGE, null, neighborNames, neighborNames[0]);
+    for (Iroom neighbor : neighbors) {
+      if (neighbor.getName().equals(selectedRoomName)) {
+        world.movePlayer(player, neighbor.getCoordinates());
+        log("Player " + player.getName() + " moved to room " + neighbor.getName() + ".\n");
+        view.appendToConsole(
+            "Player " + player.getName() + " moved to room " + neighbor.getName() + ".\n");
+        view.displayGameWorld();
+        return;
+      }
     }
+    view.appendToConsole("Invalid room index.");
+    log("Invalid room index for player " + player.getName() + ".\n");
   }
 
   /**
@@ -307,11 +279,12 @@ public class GameController {
       player.addItem(item);
       room.getItems().remove(item);
       log("Player " + player.getName() + " picked up item " + item.getName() + ".\n");
-      System.out.println("Player " + player.getName()
-          + " picked up item " + item.getName() + ".\n");
+      view.appendToConsole(
+          "Player " + player.getName() + " picked up item " + item.getName() + ".\n");
     } else {
       log("No items in the room for player " + player.getName() + " to pick up.\n");
-      System.out.println("No items in the room for player " + player.getName() + " to pick up.\n");
+      view.appendToConsole(
+          "No items in the room for player " + player.getName() + " to pick up.\n");
     }
   }
 
@@ -320,48 +293,53 @@ public class GameController {
    *
    * @param player the player attacking the target
    */
-  private void attackTarget(Iplayer player) {
+  public void attackTarget(Iplayer player) {
     Itarget target = world.getTarget();
     if (target != null && target.getCoordinates().equals(player.getCoordinates())) {
       String result = player.attack(target, world);
       log(result + "\n");
-      System.out.println(result + "\n");
+      view.appendToConsole(result + "\n");
       if (target.getHealth() <= 0) {
-        System.out.println("Target " + target.getName() + " has been defeated!");
+        view.appendToConsole("Target " + target.getName() + " has been defeated!");
         log("Target " + target.getName() + " has been defeated!\n");
         gameRunning = false;
       }
     } else {
-      System.out.println("There is no target to attack in this room.");
+      view.appendToConsole("There is no target to attack in this room.");
       log("No target to attack in this room.\n");
     }
   }
 
   /**
    * Moves the pet to a new room.
-   *
-   * @param scanner the scanner for user input
    */
-  public void movePet(Scanner scanner) {
+  public void movePet() {
     Ipet pet = world.getPet();
     if (pet == null) {
-      System.out.println("No pet in the game world.");
+      view.appendToConsole("No pet in the game world.");
       log("No pet in the game world.\n");
       return;
     }
 
-    System.out.println("Enter the room number to move the pet to:");
-    int roomIndex = scanner.nextInt();
-    scanner.nextLine(); // consume the newline
-    Iroom room = world.getRoomByIndex(roomIndex);
-    if (room != null) {
-      world.movePet(room.getCoordinates());
-      log("Pet moved to room " + room.getName() + ".\n");
-      System.out.println("Pet moved to room " + room.getName() + ".\n");
-    } else {
-      System.out.println("Invalid room index.");
-      log("Invalid room index for moving pet.\n");
+    String[] roomNames = new String[world.getRooms().size()];
+    for (int i = 0; i < world.getRooms().size(); i++) {
+      roomNames[i] = world.getRooms().get(i).getName();
     }
+
+    String selectedRoomName = (String) JOptionPane.showInputDialog(
+        view, "Enter the room number to move the pet to:", "Move Pet", 
+        JOptionPane.QUESTION_MESSAGE, null, roomNames, roomNames[0]);
+    for (Iroom room : world.getRooms()) {
+      if (room.getName().equals(selectedRoomName)) {
+        world.movePet(room.getCoordinates());
+        log("Pet moved to room " + room.getName() + ".\n");
+        view.appendToConsole("Pet moved to room " + room.getName() + ".\n");
+        view.displayGameWorld();
+        return;
+      }
+    }
+    view.appendToConsole("Invalid room index.");
+    log("Invalid room index for moving pet.\n");
   }
 
   /**
@@ -373,10 +351,11 @@ public class GameController {
     try {
       view.displayMap(world, path);
       log("Map displayed and saved to " + path + ".\n");
-      System.out.println("Map displayed and saved to " + path + ".\n");
+      view.appendToConsole("Map displayed and saved to " + path + ".\n");
+      view.displayGameWorld();
     } catch (IOException e) {
       log("Failed to display map: " + e.getMessage() + "\n");
-      System.out.println("Failed to display map: " + e.getMessage() + "\n");
+      view.appendToConsole("Failed to display map: " + e.getMessage() + "\n");
     }
   }
 
@@ -388,27 +367,60 @@ public class GameController {
   public void displayPlayer(Iplayer player) {
     StringBuilder output = new StringBuilder();
     output.append("Player Name: " + player.getName() + "\n");
-    output.append("Coordinates: " + player.getCoordinates().getFirst()
-        + ", " + player.getCoordinates().getSecond() + "\n");
+    output.append("Coordinates: " 
+        + player.getCoordinates().getFirst() + ", " + player.getCoordinates().getSecond() + "\n");
     output.append("Items:\n");
     for (Iitem item : player.getItems()) {
       output.append(" - " + item.getName() + " (Damage: " + item.getDamage() + ")\n");
     }
     String outputStr = output.toString();
-    System.out.print(outputStr);
+    view.appendToConsole(outputStr);
     log(outputStr);
   }
 
   /**
    * Displays information about a room.
-   *
-   * @param scanner the scanner for user input
    */
-  public void displayRoom(Scanner scanner) {
-    System.out.println("Enter the room index:");
-    int roomIndex = scanner.nextInt();
-    scanner.nextLine(); // consume the newline
-    world.displayRoomInfo(roomIndex);
+  public void displayRoom() {
+    String[] roomNames = new String[world.getRooms().size()];
+    for (int i = 0; i < world.getRooms().size(); i++) {
+      roomNames[i] = world.getRooms().get(i).getName();
+    }
+
+    String selectedRoomName = (String) JOptionPane.showInputDialog(
+        view, "Enter the room index:", "Display Room", 
+        JOptionPane.QUESTION_MESSAGE, null, roomNames, roomNames[0]);
+    for (Iroom room : world.getRooms()) {
+      if (room.getName().equals(selectedRoomName)) {
+        StringBuilder output = new StringBuilder();
+        output.append("Room Name: ").append(room.getName()).append("\n");
+        output.append("Items in the Room:\n");
+        for (Iitem item : room.getItems()) {
+          output.append(" - ").append(item.getName()).append(
+              " (Damage: ").append(item.getDamage()).append(")\n");
+        }
+        output.append("Visible Rooms:\n");
+        for (Iroom visibleRoom : world.getNeighbors(room)) {
+          output.append(" - ").append(visibleRoom.getName()).append("\n");
+        }
+        output.append("Players in the Room:\n");
+        for (Iplayer player : world.getPlayers()) {
+          if (player.getCoordinates().equals(room.getCoordinates())) {
+            output.append(" - ").append(player.getName()).append("\n");
+          }
+        }
+        if (world.getPet() != null 
+            && world.getPet().getCoordinates().equals(room.getCoordinates())) {
+          output.append("Pet: ").append(world.getPet().getName()).append(" is here.\n");
+        }
+
+        view.appendToConsole(output.toString());
+        log(output.toString());
+        return;
+      }
+    }
+    view.appendToConsole("Invalid room index.\n");
+    log("Invalid room index.\n");
   }
 
   /**
@@ -424,5 +436,13 @@ public class GameController {
       }
     }
     return null;
+  }
+
+  public Iplayer getCurrentPlayer() {
+    return players.get(currentPlayerIndex);
+  }
+
+  public void addPlayerToController(Iplayer player) {
+    players.add(player);
   }
 }
