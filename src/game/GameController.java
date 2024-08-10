@@ -202,6 +202,7 @@ public class GameController {
   public void nextTurn() {
     world.moveTarget();
     view.appendToConsole("Target moved");
+    world.moveDfsPet();
     currentPlayerIndex = (currentPlayerIndex + 1) % players.size();
     currentTurn++;
     runTurn();

@@ -180,6 +180,11 @@ public class GameWorld implements Igameworld {
   public void addPet(Ipet pet) {
     this.pet = pet;
   }
+  
+  public void moveDfsPet() {
+    pet.moveDfs(this);
+  }
+ 
 
   /**
    * Sets the target in the game world.

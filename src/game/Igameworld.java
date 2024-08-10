@@ -125,4 +125,6 @@ public interface Igameworld {
    * Advances the game world to the next turn.
    */
   void nextTurn();
+  
+  void moveDfsPet();
 }

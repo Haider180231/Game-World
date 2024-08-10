@@ -233,8 +233,6 @@ Game over. Maximum turns reached.
 
 ## Limitation and Assuming
 
-For testing purposes, I set up a Target that doesn't move to be born in room 0, and then the user and the pet can choose their own birth location when they are born
-
 AI actions are relatively homogenous.
 
 
