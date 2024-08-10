@@ -438,10 +438,20 @@ public class GameController {
     return null;
   }
 
+  /**
+   * Retrieves the current player based on the current player index.
+   *
+   * @return the current player
+   */
   public Iplayer getCurrentPlayer() {
     return players.get(currentPlayerIndex);
   }
 
+  /**
+   * Adds a player to the controller's list of players.
+   *
+   * @param player the player to add
+   */
   public void addPlayerToController(Iplayer player) {
     players.add(player);
   }
