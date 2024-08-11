@@ -289,6 +289,35 @@ The JAR file provides several functionalities that you can use to interact with 
    - **Description**: Exits the game.
 
 
+## GUI
+
+### Starting the Game
+- **Launch the Application**: Run the game by executing the main class in your preferred IDE or from the command line.
+- **New Game**: After launching, you will be greeted with a welcome screen. To start a new game, go to the `Game` menu and select `New Game`.
+- **Set Up Players and Pet**:
+  - You will be prompted to enter the number of players (up to 10).
+  - Provide names for each player and choose their type (Human or Computer).
+  - Assign each player to a room by specifying the room index.
+  - Finally, assign a room for the pet.
+
+### In-Game Operations
+- **Move**: Use the corresponding button to move your player to an adjacent room.
+- **Pick Item (Shortcut: P)**: Use the button or press the `P` key to pick up an item in the current room.
+- **Look Around (Shortcut: L)**: Use the button or press the `L` key to get a description of the current room and nearby areas.
+- **Attack (Shortcut: A)**: Use the button or press the `A` key to attempt an attack on the target, if they are in the same room.
+- **Display Map**: Use the button to view the map of the game world.
+- **Display Player**: Use the button to view details about the current player.
+- **Display Room**: Use the button to view details about a specific room.
+- **Move Pet**: Use the button to move the pet to a new room.
+
+
+### Mouse Interactions
+- **Clicking on Players**: Click on a player's graphical representation to get their description.
+- **Right-Click on Room**: Right-click on a room to move the player to that room if it is adjacent.
+
+### Ending the Game
+- **Quit Game**: To exit the game, go to the `Game` menu and select `Quit Game`.
+
 
 
 
